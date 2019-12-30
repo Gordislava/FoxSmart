@@ -1,0 +1,10 @@
+@mixin list-norm {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin pseudo {
+    position: absolute;
+    content: "";
+  }
