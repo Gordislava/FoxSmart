@@ -103,7 +103,7 @@ var run = require("run-sequence");
 // });
 
 gulp.task("css", function () {
-  return gulp.src("source/scss/**/*.scss")
+  return gulp.src("source/scss/*.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

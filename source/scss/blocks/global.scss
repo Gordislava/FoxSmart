@@ -1,0 +1,135 @@
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Lato-Light"; 
+    src: url("../fonts/Lato-Light.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: "Lato-Regular";
+    font-style: normal;
+    src: url("../fonts/Lato-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Lato-Bold"; 
+    src: url("../fonts/Lato-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Lato-SemiBold"; 
+    src: url("../fonts/Lato-SemiBold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Lato-Heavy"; 
+    src: url("../fonts/Lato-Heavy.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Lato-Black"; 
+    src: url("../fonts/Lato-Black.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-family: "Exo2-Regular";
+    font-style: normal;
+    src: url("../fonts/Exo2-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Exo2-Bold"; 
+    src: url("../fonts/Exo2-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     background-color: $bg-color;
+     color: $text;
+     font-family: $lato;
+     font-size: 15px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1920px) {
+        max-width: none;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 20px;
+    margin: auto;
+    @media (max-width: 420px) {
+        padding: 0 15px;
+    }
+    @media (max-width: 1220px) {
+        max-width: none;
+    }
+}

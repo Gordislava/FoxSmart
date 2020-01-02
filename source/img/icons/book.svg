@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
+	<rect x="368" y="72" style="fill:#FFCB58" width="80" height="416" data-original="#FFA64D" class="" data-old_color="#FFA64D"/>
+	<rect x="64" y="32" style="fill:#FFCB58" width="160" height="144" data-original="#FFA64D" class="" data-old_color="#FFA64D"/>
+</g><g>
+	<path style="fill:#2E3B48" d="M464,32V0H32v32H0v368h272v56c0,22.056,17.944,40,40,40s40-17.944,40-40v-56h16v-16h-16v-16h16v-16   h-16V165.576l-40-60l-40,60V352h-16V16h192v80h-32v16h32v16h-48v16h48v16h-32v16h32v16h-48v16h48v16h-32v16h32v16h-48v16h48v16h-32   v16h32v16h-48v16h48v16h-32v16h32h16V48h16v336h-32h-8h-40v16h40h8h48V32H464z M304,176v192h16V176h16v224h-16v-16h-16v16h-16V176   H304z M288,416h48v16h-48V416z M312,480c-13.232,0-24-10.768-24-24v-8h48v8C336,469.232,325.232,480,312,480z M329.056,160h-34.104   L312,134.424L329.056,160z M272,384H16V48h16v320h240V384z M240,352H48V16h192V352z" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="64" y="192" style="fill:#2E3B48" width="160" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="64" y="224" style="fill:#2E3B48" width="160" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="64" y="256" style="fill:#2E3B48" width="160" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="64" y="288" style="fill:#2E3B48" width="160" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="208" y="320" style="fill:#2E3B48" width="16" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="64" y="320" style="fill:#2E3B48" width="128" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="416" y="416" style="fill:#2E3B48" width="32" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+	<rect x="400" y="448" style="fill:#2E3B48" width="48" height="16" data-original="#333333" class="active-path" data-old_color="#333333"/>
+</g></g> </svg>

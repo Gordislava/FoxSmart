@@ -1,5 +1,4 @@
-body {
-    background-color: cornflowerblue;
-}
-
 @import "blocks/vars.scss";
+@import "blocks/mixin.scss";
+@import "blocks/global.scss";
+@import "blocks/footer.scss";

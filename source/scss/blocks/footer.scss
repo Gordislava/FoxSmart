@@ -1,0 +1,33 @@
+.footer {
+    background-color: $bg-dark;
+    color: $bg-color;
+}
+
+.block-inst {
+    max-width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        font-size: 11px;
+        line-height: 16px;
+        font-family: $exo2;
+        text-transform: uppercase;
+        color: $bg-color;
+    }
+}
+
+.block-inst__icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("../../img/icons/instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 15px;
+    a {
+        width: 30px;
+        height: 30px;
+    }
+}
