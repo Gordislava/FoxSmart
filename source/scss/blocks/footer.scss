@@ -1,10 +1,60 @@
 .footer {
     background-color: $bg-dark;
     color: $bg-color;
+    text-transform: uppercase;
+    font-family: $exo2;
+    position: relative;
+    .logo {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    @media (max-width: 1024px) {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.footer__row--second {
+    position: relative;
+    padding-top: 10px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: $bg-color;
+        opacity: 0.1;
+        top: 0;
+        left: 20px;
+        @media (max-width: 1024px) {
+            top: auto;
+            bottom: 50px;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.footer__copyright {
+    font-size: 12px;
+    color: $text-gray;
+    text-transform: none;
+    @media (max-width: 1024px) {
+        margin: 0;
+    }
 }
 
 .block-inst {
-    max-width: 160px;
+    max-width: 146px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +64,15 @@
         font-family: $exo2;
         text-transform: uppercase;
         color: $bg-color;
+        transition: all .25s ease-in;
+        &:hover {
+            color: $text-gray;
+        }
+    }
+    @media (max-width: 1024px) {
+        position: absolute;
+        bottom: 70px;
+        cursor: pointer;
     }
 }
 
@@ -26,8 +85,110 @@
     background-position: center;
     background-size: 100%;
     margin-right: 15px;
+    transition: all .25s ease-in;
+    &:hover {
+        opacity: 0.7;
+    }
     a {
         width: 30px;
         height: 30px;
+        
     }
 }
+
+.block-phone {
+    padding-left: 50px;
+    background-image: url("../../img/phone-orange.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 33px 33px;
+    display: flex;
+    .block-phone__text {
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    .block-phone__link {
+        font-size: 17px;
+        line-height: 20px;
+        font-family: $lato-heavy;
+        color: $bg-color;
+        padding-right: 15px;
+        transition: all .25s ease-in;
+        &:hover {
+            color: $text-gray;
+        }
+    }
+    .block-phone__icon {
+        @include list-norm;
+        display: flex;
+        align-items: center;
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            transition: all .25s ease-in;
+            &:hover {
+                opacity: 0.7;
+            }
+
+        }
+        .block-phone__icon--viber {
+            background-image: url("../../img/icons/viber.svg");
+            margin-right: 10px;
+        }
+        .block-phone__icon--whatsapp {
+            background-image: url("../../img/icons/whatsapp.svg");
+        }
+    }
+}
+
+.main-menu {
+    @include list-norm;
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    .main-menu__link {
+        color: $text-gray;
+        font-family: $exo2-bold;
+        font-size: 12px;
+        line-height: 20px;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0);
+        padding-top: 21px;
+        transition: all .25s ease-in;
+        &:hover {
+            color: $bg-color;
+            border-top: 1px solid rgba($color: $accent, $alpha: 1.0);
+        }
+        @media (max-width: 1024px) {
+            border-top: 0;
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0);
+            padding-top: 0;
+            padding-bottom: 3px;
+            transition: all .25s ease-in;
+            &:hover {
+                color: $bg-color;
+                border-top: none;
+                border-bottom-color: rgba($color: $accent, $alpha: 1.0);
+            }
+        }
+    }
+    .main-menu__item {
+        @media (max-width: 1024px) {
+            margin-bottom: 7px;
+        }
+    }
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 90px;
+    }
+}
+
+
+

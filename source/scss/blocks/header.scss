@@ -1,0 +1,205 @@
+.header {
+    text-transform: uppercase;
+    background-color: $accent-light;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (min-width: 1023px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.container.header__row{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+}
+
+.container.header__row--dark {
+    @media (min-width: 1024px) {
+        padding-left: 260px;
+        padding-top: 35px;
+        order: 1;
+        width: 68%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header__row--dark {
+    background-color: #4d5457;
+    color: $bg-color;
+    .block-inst__descktop-text {
+        display: none;
+    }
+    @media (min-width: 1023px) {
+        background-color: $accent-light;
+        justify-content: center;
+        .block-inst__descktop-text {
+            display: block;
+
+        }
+        .block-inst__phone-text {
+            display: none;
+        }
+        
+    }
+}
+
+.header__descr {
+    display: none;
+    @media (min-width: 1220px) {
+        max-width: 190px;
+        display: block;
+        font-size: 13px;
+        line-height: 20px;
+        font-family: $exo2;
+        color: #383838;
+        text-transform: none;
+        padding-left: 15px;
+        border-left: 1px solid #e1e7ea;
+    }
+}
+
+
+.header__address {
+    padding-left: 20px;
+    background-image: url("../../img/placeholder-filled-point.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 13px 15px;
+    position: relative;
+    max-width: 120px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 20px);
+        height: 1px;
+        background-color: $text-gray;
+        left: 20px;
+        bottom: 0;
+    }
+    a {
+        text-transform: none;
+        font-size: 13px;
+        color: $bg-color;
+        font-family: $exo2;
+        @media (min-width: 1023px) {
+            color: $accent;
+        }
+    }
+    @media (min-width: 1023px) {
+        order: 2;
+    }
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .block-inst {
+        position: static;
+        max-width: 131px;
+        font-size: 11px;
+        a {
+            @media (min-width: 1023px) {
+                color: $text-light;
+            }
+        }
+    }
+    .block-inst__icon {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .main-menu {
+        .main-menu__link {
+            color: $text-light;
+        }
+        display: none;
+        @media (min-width: 1023px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+    }
+    
+    .block-phone {
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 7px;
+        .block-phone__link {
+            color: $text-light;
+            
+        }
+    }
+}
+
+.header__row--second {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $accent;
+        opacity: 0.1;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+    @media (min-width: 1023px) {
+        order: 3;
+    }
+}
+
+.header__row--third {
+    justify-content: center;
+    @media (min-width: 1023px) {
+        order: 2;
+    }
+}
+
+.container.header__row--third {
+    @media (min-width: 1023px) {
+        width: 32%;
+    }
+}
+
+.header__menu-icon {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 6px 24px 0 rgba(23, 69, 92, 0.1);
+    border-radius: 50%;
+    background-color: $bg-color;
+    background-image: url("../../img/icons/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 13px;
+    cursor: pointer;
+    @media (min-width: 1023px) {
+        display: none;
+    }
+}
+
+.header__main-menu {
+    @media (min-width: 1023px) {
+        width: 68%;
+    }
+}
+
+.header__logo img {
+    max-width: 225px;
+}
+
+.header__logo{
+    @media (min-width: 1024px) {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+    }
+}
