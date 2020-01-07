@@ -137,3 +137,19 @@ input[type="radio"].visually-hidden {
 .main {
     flex-grow: 1;
 }
+
+.page-title {
+    font-size: 44px;
+    line-height: 20px;
+    font-family: $lato-black;
+    color: $text;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    text-transform: none;
+    @media (max-width: 768px) {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}

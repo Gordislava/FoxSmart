@@ -1,0 +1,61 @@
+.consult-banner {
+    background-color: #3c86d3;
+    background-image: url("../../img/bgr-gradient-angle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    padding: 25px 25px 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background-size: cover;
+    @media (max-width: 768px) {
+        background-image: url("../../img/bgr-gradient-angle-vertical.png");
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 25px 20px;
+        justify-content: space-between;
+        background-position: center bottom -45px;
+    }
+    @media (max-width: 375px) {
+        background-position: center;
+    }
+    .btn {
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }  
+    }
+}
+
+.consult-banner__title {
+    margin: 0;
+    padding: 0;
+    font-size: 39px;
+    color: $bg-color;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: $exo2-bold;
+    @media (max-width: 768px) {
+        font-size: 27px;
+        line-height: 42px;
+        
+    }
+}
+
+.consult-banner__text {
+    color: $bg-color;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-family: $exo2;
+    line-height: 26px;
+    @media (max-width: 768px) {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+

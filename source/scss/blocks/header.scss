@@ -1,15 +1,16 @@
 .header {
     text-transform: uppercase;
-    background-color: $accent-light;
+    background: 
+                url("../../img/pattern.png") no-repeat left top,
+                radial-gradient(circle at 0 0, #eaf5fb, #f8fafb);
     position: relative;
 }
 
 .header__row {
     width: 100%;
     max-width: 1280px;
-    padding: 20px;
+    padding: 20px 20px 30px;
     margin: auto;
-    background-color: $accent-light;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -68,8 +69,8 @@
             position: static;
             max-width: 131px;
             font-size: 11px;
-            
-            
+
+
         }
     }
     .block-inst__icon {
@@ -156,7 +157,7 @@
     padding-top: 7px;
     .block-phone__link {
         color: $text-light;
-        
+
     }
     @media (max-width: 1024px) {
         order: 4;
@@ -219,7 +220,7 @@
             }
         }
         @media (max-width: 1024px) {
-            display: none;  
+            display: none;
         }
     }
     .header__menu-icon {
@@ -236,7 +237,7 @@
             background-position: center;
             background-size: 13px 13px;
             cursor: pointer;
-        }   
+        }
     }
 }
 
@@ -305,7 +306,7 @@
         .header__menu-icon {
             margin-left: 15px;
             background-image: url("../../img/icons/close-button.svg");
-            
+
         }
         .header__menu-icon--wrap {
             display: flex;
@@ -314,5 +315,153 @@
             padding-bottom: 20px;
         }
     }
-    
+
+}
+
+
+.header__title {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 20px 25px;
+    margin: auto;
+    @media (max-width: 1280px) {
+        max-width: none;
+    }
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.header__title-description {
+    margin: 0;
+    padding: 0;
+    font-family: $lato-light;
+    font-size: 21px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #414142;
+    text-transform: none;
+}
+
+
+.header__wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    background-image: url("../../img/illustrations/main.svg");
+    background-repeat: no-repeat;
+    background-position: right 50px bottom -100px;
+    background-size: 342px 300px;
+    padding-bottom: 15px;
+    @media (max-width: 1280px) {
+        max-width: none;
+    }
+    @media (max-width: 600px) {
+        background-image: none;
+    }
+}
+
+.breadcrumb {
+    width: 100%;
+    padding: 0 20px 10px;
+    text-transform: none;
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.breadcrumb__list {
+    @include list-norm;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.breadcrumb__link {
+    color: #96aebd;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.breadcrumb__item {
+    position: relative;
+    padding-right: 25px;
+    padding-left: 12px;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 1px;
+        background-color: #96aebd;
+        right: 0;
+        top: 50%;
+        z-index: 10;
+    }
+}
+
+.breadcrumb__item:last-child::after {
+    display: none;
+}
+
+.breadcrumb__item--first {
+    padding-left: 25px;
+    .breadcrumb__link {
+        color: #526775;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 17px;
+        height: 13px;
+        background-image: url("../../img/icons/home.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 17px 13px;
+        left: 0;
+        top: 50%;
+        margin-top: -7px;
+        opacity: 0.2;
+        z-index: 10;
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.24px;
+    font-family: $exo2-bold;
+    padding: 18px 30px 20px;
+    border-radius: 29px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.btn-orange {
+    box-shadow: 0px 5px 16px 0 rgba(0, 0, 0, 0.12);
+    background-image: $opposite;
+    color: $bg-color;
+    transition: all .25s ease-in;
+    &:hover {
+        background-image: $opposite-light;
+    }
+    &:focus {
+        box-shadow: 0px 5px 16px 0 rgba(0, 0, 0, 0.12), inset 0px 3px 7px 0 rgba(0, 0, 0, 0.32);
+    }
+}
+
+.btn-gray {
+    background-color: $accent-gray;
+    color: #282a2b;
+    transition: all .25s ease-in;
+    &:hover {
+        color: $bg-color;
+        background-color: $accent;
+    }
+    &:focus {
+        background-color: $accent;
+        box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.32);
+        color: $bg-color;
+    }
 }
