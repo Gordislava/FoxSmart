@@ -89,6 +89,14 @@ fieldset {
     padding: 0;
 }
 
+h4 {
+    font-size: 20px;
+    line-height: 27px;
+    font-family: $lato-black;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {

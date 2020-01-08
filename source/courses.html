@@ -72,7 +72,7 @@
                         </div>
                         <div class="header__title">
                             <h1 class="page-title">Компьютерные курсы</h1>
-                            <p class="header__title-description">Быстро, просто, качесвтенно с Foxmart</p>
+                            <p class="header__title-description">Быстро, просто, качественно с Foxmart</p>
                         </div>
                         <section class="breadcrumb">
                             <ul class="breadcrumb__list">
@@ -88,6 +88,55 @@
                 </header>
             </div>
             <main class="main">
+                <section>
+                    <h2 class="page-title">Направления</h2>
+                    <div class="container">
+                        <ul class="card__list">
+                            <li class="card__item card__item-pc">
+                                <div class="card__wrap">
+                                    <h4>Компьютерная <br>грамота</h4>
+                                    <p>Обучение компьютеру для детей и взрослых</p>
+                                    <a href="#">Подробнее об услуге</a>
+                                </div>
+                            </li>
+                            <li class="card__item card__item-1c">
+                                <div class="card__wrap">
+                                    <h4>Обучение 1С Бухгалтерии</h4>
+                                    <p>Обучаем работе со всеми модулями 1С Бухгалтерии</p>
+                                    <a href="#">Подробнее об услуге</a>
+                                </div>
+                            </li>
+                            <li class="card__item card__item-scratch">
+                                <div class="card__wrap">
+                                    <h4>SCRATCH-программирование</h4>
+                                    <p>Обучаем программированию и детей и взрослых.</p>
+                                    <a href="#">Подробнее об услуге</a>
+                                </div>
+                            </li>
+                            <li class="card__item card__item-autocad">
+                                <div class="card__wrap">
+                                    <h4>AutoCAD и 3Ds MAX</h4>
+                                    <p>Обучим разработке чертежей и проектов, дизайн-макетов и пр.</p>
+                                    <a href="#">Подробнее об услуге</a>
+                                </div>
+                            </li>
+                            <li class="card__item card__item-photoshop">
+                                <div class="card__wrap">
+                                    <h4>Photoshop и <br>CorelDRAW</h4>
+                                    <p>Курсы в FoxSmart проводят опытные преподаватели</p>
+                                    <a href="#">Подробнее об услуге</a>
+                                </div>
+                            </li>
+                            <li class="card__item card__item-banner">
+                                <div class="card__wrap">
+                                    <h4>Оставьте заявку на <br><span>бесплатную консультацию!</span></h4>
+                                    <p>Мы с радостью проконсультируем вас.</p>
+                                    <button class="btn btn-orange">Оставить заявку</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 <section class="container">
                     <section class="consult-banner">
                         <div class="consult-banner__wrap">
@@ -99,17 +148,33 @@
                 </section>
                 <button class="btn btn-gray">Узнать подробнее о нас</button>
                 <a href="#" class="btn btn-orange">Узнать подробнее о нас</a>
-                <section class="map">
-                    <h2>Филиалы FoxSmart</h2>
+                <section class="tab-section">
+                    <h2 class="container page-title">Филиалы FoxSmart</h2>
                     <div class="tab">
-                        <div class="tab__wrap">
-                            <div class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
-                                <h4>Филиал в г. Борисов/h4>
+                        <div id="Borisov" class="tabcontent">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7794045126c89da2b51356dd867d808c68a30ea007860e7c051400bb3197b179&amp;source=constructor" width="100%" height="495" frameborder="0"></iframe>
+                        </div>
+                        <div id="London" class="tabcontent">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee7dd4ab0ca23218a96c110f83a53803b0357e4d3569704fd4f1ac8b3059f8f3&amp;source=constructor" width="100%" height="495" frameborder="0"></iframe>
+                        </div>
+                        <div id="Paris" class="tabcontent">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad0c97fe5d71aad3ee233d921f18c351621131093f90c636b4b935c58a4a8caf9&amp;source=constructor" width="100%" height="495" frameborder="0"></iframe>
+                        </div>
+                        <div id="Tokyo" class="tabcontent">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab35dd7aa710b9dff0a33d3968c2e31364a66e79320e8a19179174f6d87de5ee3&amp;source=constructor" width="100%" height="495" frameborder="0"></iframe>
+                        </div>
+                        <div class="container tab__wrap">
+                            <div class="tab__link tab__link--common" onclick="openCity(event, 'Borisov')">
+                                <h4 class="tab__title">Филиал в г. Борисов</h4>
+                                <p>ул. 3 Интернационала, 49</p>
+                            </div>
+                            <div class="tab__link tab__link--general" onclick="openCity(event, 'London')" id="defaultOpen">
+                                <h4 class="tab__title"> г. Минск</h4>
                                 <p>Машерова 9, оф.202 (м.Якуба Коласа), ост. "Куйбышева"</p>
                             
-                                <div class="map__social">
-                                    <a href="">Instagram</a>
-                                    <a href="">Vkontakte</a>
+                                <div class="tab__social">
+                                    <a href="#" class="tab__social-link tab__social-link--vk"><span class="visually-hidden">Vkontakte</span></a>
+                                    <a href="#" class="tab__social-link tab__social-link--inst"><span class="visually-hidden">Instagram</span></a>
                                 </div>
                             
                                 <div>
@@ -118,23 +183,15 @@
                                 </div>
                             
                             </div>
-                            <div class="tablinks" onclick="openCity(event, 'Paris')">
-                                <h4>г. Минск</h4>
-                                <p>Машерова 9, оф.202 (м.Якуба Коласа), ост. "Куйбышева"</p>
+                            <div class="tab__link tab__link--common" onclick="openCity(event, 'Paris')">
+                                <h4 class="tab__title">Филиал в г. Жлобин</h4>
+                                <p>ул. Первомайская, 5</p>
                             </div>
-                            <div class="tablinks" onclick="openCity(event, 'Tokyo')">
-                                <h4>г. Минск</h4>
-                                <p>Машерова 9, оф.202 (м.Якуба Коласа), ост. "Куйбышева"</p>
+                            
+                            <div class="tab__link tab__link--common" onclick="openCity(event, 'Tokyo')">
+                                <h4 class="tab__title">Филиал в г. Бобруйск</h4>
+                                <p>ул. Пролетарская, 16 </p>
                             </div>
-                        </>
-                        <div id="London" class="tabcontent">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee7dd4ab0ca23218a96c110f83a53803b0357e4d3569704fd4f1ac8b3059f8f3&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
-                        </div>
-                        <div id="Paris" class="tabcontent">
-                            что-то
-                        </div>
-                        <div id="Tokyo" class="tabcontent">
-                            что-то tot
                         </div>
                     </div>
                     

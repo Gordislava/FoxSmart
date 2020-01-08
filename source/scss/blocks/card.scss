@@ -1,0 +1,86 @@
+.card__list {
+    @include list-norm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card__item {
+    padding: 35px 40px 30px 30px;
+    box-shadow: 0px 5px 38px 0 rgba(10, 20, 26, 0.07);
+    border: solid 1px #ecf0f2;
+    background-repeat: no-repeat;
+    background-position: left 30px top 35px;
+    width: 33.33%;
+    display: flex;
+    p {
+        margin: 0;
+        padding: 0;
+        color: $text-light;
+        margin-bottom: 15px;
+        margin-top: auto;
+    }
+    a {
+        color: $accent;
+        text-decoration: underline;
+    }
+}
+
+.card__item-pc {
+    background-image: url("../../img/icons/video-call.svg");
+    background-size: 80px 80px;
+}
+
+.card__item-1c {
+    background-image: url("../../img/1c.png");
+    background-size: 75px 92px;
+}
+
+.card__item-scratch {
+    background-image: url("../../img/icons/browser.svg");
+    background-size: 80px 80px;
+}
+
+.card__item-autocad {
+    background-image: url("../../img/icons/cube.svg");
+    background-size: 70px 80px;
+}
+
+.card__item-photoshop {
+    background-image: url("../../img/icons/pantone.svg");
+    background-size: 86px 84px;
+}
+
+
+.card__item.card__item-banner {
+    box-shadow: none;
+    border: none;
+    background-color: $accent-light;
+}
+
+.card__wrap {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__item-banner {
+    span {
+        color: $accent;
+    }
+    .card__wrap {
+        padding-left: 0;
+    }
+    p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .btn {
+        max-width: 200px;
+        padding-top: 13px;
+        padding-bottom: 15px;
+    }
+    background-position: right bottom -3px;
+    background-size: 170px 173px;
+}
