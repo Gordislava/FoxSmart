@@ -1,3 +1,21 @@
+.card {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @media (max-width: 600px) {
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+    .page-title {
+        margin-bottom: 40px;
+        padding-top: 10px;
+        text-align: center;
+        @media (max-width: 600px) {
+            margin-bottom: 25px;
+            padding-top: 0;
+        }
+    }
+}
+
 .card__list {
     @include list-norm;
     display: flex;
@@ -13,6 +31,15 @@
     background-position: left 30px top 35px;
     width: 33.33%;
     display: flex;
+    @media (max-width: 1024px) {
+        width: 50%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        background-position: center top 15px;
+        padding: 15px 20px 30px 18px;
+        text-align: center;
+    }
     p {
         margin: 0;
         padding: 0;
@@ -26,9 +53,27 @@
     }
 }
 
+.card__wrap {
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 600px) {
+        padding-left: 0;
+        padding-top: 110px;
+    }
+    br {
+        display: none;
+    }
+}
+
 .card__item-pc {
     background-image: url("../../img/icons/video-call.svg");
     background-size: 80px 80px;
+    @media (max-width: 600px) {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
 }
 
 .card__item-1c {
@@ -58,29 +103,293 @@
     background-color: $accent-light;
 }
 
-.card__wrap {
-    padding-left: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 
 .card__item-banner {
+    @media (max-width: 600px) {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
     span {
         color: $accent;
     }
     .card__wrap {
         padding-left: 0;
+        @media (max-width: 600px) {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
     }
     p {
         font-size: 14px;
         margin-bottom: 8px;
+        @media (max-width: 600px) {
+            margin-bottom: 22px;
+        }
     }
     .btn {
         max-width: 200px;
         padding-top: 13px;
         padding-bottom: 15px;
+        position: relative;
+        z-index: 2;
+        margin: auto;
+        @media (max-width: 600px) {
+
+        }
     }
-    background-position: right bottom -3px;
-    background-size: 170px 173px;
+    
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 170px;
+        height: 173px;
+        background-image: url("../../img/icons/chat.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: 0;
+        opacity: 0.05;
+        z-index: 1;
+    }
+}
+
+.card-advantage {
+    margin-bottom: 60px;
+    .page-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.card-advantage__list {
+    @include list-norm;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        margin-bottom: 0;
+        justify-content: center;
+    }
+}
+
+.card-advantage__item {
+    width: 23%;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 65px 65px;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+        @media (max-width: 1024px) {
+            margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 1024px) {
+        min-width: 45%;
+        margin-bottom: 35px;
+        min-height: 80px;
+    }
+    @media (max-width: 768px) {
+        min-width: 90%;
+        background-position: center top;
+        padding: 0;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+.card-advantage__wrap {
+    padding-left: 80px;
+    @media (max-width: 768px) {
+        padding-left: 10px;
+        padding-top: 75px;
+    }
+}
+
+.card-advantage__item--calendar {
+    background-image: url("../../img/icons/calendar.svg");
+    background-position: left top 10px;
+    @media (max-width: 768px) {
+        background-position: center top;
+    }
+}
+
+.card-advantage__item--loupe {
+    background-image: url("../../img/icons/loupe.svg");
+}
+
+.card-advantage__item--folder {
+    background-image: url("../../img/icons/folder.svg");
+
+}
+
+.card-advantage__item--desk {
+    background-image: url("../../img/icons/desk.svg");
+}
+
+
+
+.card-small {
+    background-color: $accent-light;
+    background-image: url("../../img/pattern-light.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-bottom: 15px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    .page-title {
+        text-align: center;
+        max-width: 550px;
+        line-height: 55px;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+}
+
+.card-small__list {
+    @include list-norm;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-small__item {
+    width: 23%;
+    background-color: $bg-color;
+    border-radius: 5px;
+    box-shadow: 0px 11px 21px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 30px;
+    padding-top: 55px;
+    padding-right: 35px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $lato-black;
+    margin-bottom: 45px;
+    @media (max-width: 1024px) {
+        width: 45%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 55px;
+        height: 55px;
+        top: -17px;
+        left: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @media (max-width: 1024px) {
+            left: 50%;
+            margin-left: -22px;
+        }
+    }
+}
+
+.card-small__item--group::before {
+    background-image: url("../../img/icons/teamwork.svg");
+}
+.card-small__item--strategy::before {
+    background-image: url("../../img/icons/strategy.svg");
+}
+.card-small__item--chat::before {
+    background-image: url("../../img/icons/conversation.svg");
+}
+.card-small__item--employee::before {
+    background-image: url("../../img/icons/employee.svg");
+}
+
+
+.card-text-section {
+    padding-top: 50px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    .page-title {
+        margin-bottom: 15px;
+        line-height: 53px;
+        @media (max-width: 768px) {
+            line-height: 37px;
+            padding-bottom: 40px;
+        }
+    }
+    p {
+        padding-left: 30px;
+        @media (max-width: 768px) {
+            padding-left: 0;
+        }
+    }
+}
+
+.card-text-section__text {
+    width: 48%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.card-text-section__list {
+    @include list-norm;
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    box-shadow: 0px 10px 26px 0 rgba(11, 19, 27, 0.08);
+    border: solid 1px #edf6fb;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    
+}
+
+.card-text-section__item {
+    background-color: $bg-color;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: $lato-heavy;
+    text-transform: uppercase;
+    padding: 25px 25px 30px 80px;
+    background-image: url();
+    position: relative;
+    width: 50%;
+    border: solid 1px #edf6fb;
+    @media (max-width: 1024px) {
+        width: 100%;
+        br {
+            display: none;
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 37px;
+        height: 37px;
+        background-color: #ea550b;
+        border-radius: 50%;
+        background-image: url("../../img/check.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        top: 25px;
+        left: 30px;
+    }
+}
+
+.card-promo-section {
+    margin-bottom: 50px;
 }

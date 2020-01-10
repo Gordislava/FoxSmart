@@ -88,7 +88,7 @@
                 </header>
             </div>
             <main class="main">
-                <section>
+                <section class="card">
                     <h2 class="page-title">Направления</h2>
                     <div class="container">
                         <ul class="card__list">
@@ -137,17 +137,107 @@
                         </ul>
                     </div>
                 </section>
-                <section class="container">
-                    <section class="consult-banner">
-                        <div class="consult-banner__wrap">
-                            <h2 class="consult-banner__title">Запись и консультация</h2>
-                            <p class="consult-banner__text">Мы всегда готовы ответить на все интересующие вопросы по любому из направлений нашего центра!</p>
+                <section class="container card-advantage">
+                    <h2 class="page-title">Что предлагает <span>FoxSmart</span></h2>
+                    <ul class="card-advantage__list">
+                        <li class="card-advantage__item card-advantage__item--calendar">
+                            <div class="card-advantage__wrap">Усвоение необходимого объема материала <b>в кратчайшие</b> сроки</div>
+                        </li>
+                        <li class="card-advantage__item card-advantage__item--loupe">
+                            <div class="card-advantage__wrap">Повышение <b>уровня знаний</b></div>
+                        </li>
+                        <li class="card-advantage__item card-advantage__item--folder">
+                            <div class="card-advantage__wrap"><b>Компактная</b> подача материала</div>
+                        </li>
+                        <li class="card-advantage__item card-advantage__item--desk">
+                            <div class="card-advantage__wrap"><b>Электронные</b> домашние задания</div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="card-small">
+                    <div class="container">
+                        <h2 class="page-title"><span>Индивидуальный подход</span> к каждому ученику</h2>
+                        <ul class="card-small__list">
+                            <li class="card-small__item card-small__item--group">Занятия в малых группах от 3 до 5 человек</li>
+                            <li class="card-small__item card-small__item--strategy">Индивидуальные занятия</li>
+                            <li class="card-small__item card-small__item--chat">Онлайн-поддержка в любое время</li>
+                            <li class="card-small__item card-small__item--employee">Удобное и гибкое расписание</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="form-small-section">
+                    <div class="container">
+                        <h3 class="form-title">Хотите бесплатную консультацию?</h3>
+                        <p class="form-title__note">Оставьте заявку прямо сейчас! 
+                            Мы свяжемся с Вами по указанным контактам!</p>
+                        <form action="" class="form-small">
+                            <div class="form-small__wrapper">
+                                <input type="text" placeholder="Ваше имя" class="form-small__input">
+                                <input type="tel" placeholder="Ваш телефон" class="form-small__input">
+                                <button class="btn btn-orange">Оставить заявку</button>
+                                <p class="form-small__note">Нажимая на кнопку «Оставить заявку», вы соглашаетесь с 
+                                    Политикой конфиденциальности</p>
+    
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="card-promo-section">
+                    <section class="container card-text-section">
+                        <div class="card-text-section__text">
+                            <h2 class="page-title">Почему именно FoxSmart?
+                                <br>– все просто:</h2>
+                                <p>12 лет - средний опыт преподавателей. Опытные преподаватели найдут подход к ребенку и заинтересуют своим предметом в мини группах до 5 человек. После бесплатного тестирования и индивидуального занятия подбирается группа и преподаватель на основе личных качеств и уровня подготовки ребенка</p>
                         </div>
-                        <button class="btn btn-orange">Записаться на курсы</button>
+                        <ul class="card-text-section__list">
+                            <li class="card-text-section__item">Комфортный <br>оборудованный класс</li>
+                            <li class="card-text-section__item">Занятия высокого уровня за 
+                                разумную цену</li>
+                            <li class="card-text-section__item">Команда профессиональных 
+                                педагогов</li>
+                            <li class="card-text-section__item">Прекрасные результаты на 
+                                экзаменах и ЦТ</li>
+                        </ul>
+                    </section>
+                    <section class="container">
+                        <section class="consult-banner">
+                            <div class="consult-banner__wrap">
+                                <h2 class="consult-banner__title">Запись и консультация</h2>
+                                <p class="consult-banner__text">Мы всегда готовы ответить на все интересующие вопросы по любому из направлений нашего центра!</p>
+                            </div>
+                            <button class="btn btn-orange">Записаться на курсы</button>
+                        </section>
                     </section>
                 </section>
-                <button class="btn btn-gray">Узнать подробнее о нас</button>
-                <a href="#" class="btn btn-orange">Узнать подробнее о нас</a>
+                <section class="form-section">
+                    <div class="container">
+                        <form action="" class="form">
+                            <h2 class="page-title">Есть вопросы? Задайте их нам!</h2>
+                            <p class="page-title-note">Мы с радостью ответим на все интересующие Вас вопросы</p>
+                            <div class="form__wrapper">
+                                <div class="form__input-wrapper form__input--size-full">
+                                    <input type="text" name="" id="" class="form__input" placeholder="Ваше имя">
+                                    <input type="tel" name="" id="" class="form__input" placeholder="Ваш телефон">
+                                </div>
+                                <div class="select__wrap">
+                                    <select name="" id="" class="form__input form__input--select form__input--size-full" style="color: #b8babb;">
+                                        <option selected disabled class="placeholder">Ваш город</option>
+                                        <option value="Минск" style="padding-top: 18px; padding-bottom: 18px;">Минск</option>
+                                        <option value="Борисов">Борисов</option>
+                                        <option value="Бобруйск">Бобруйск</option>
+                                        <option value="Жлобин">Жлобин</option>
+                                    </select>
+                                </div>
+                                <textarea name="" id="" class="form__input form__input--size-full form__input--textarea" placeholder="Сообщение"></textarea>
+                                <div class="form__btn-wrap">
+                                    <button class="btn btn-orange" type="submit">Отправить</button>
+                                    <p class="form-small__note">Нажимая на кнопку «Оставить заявку», вы соглашаетесь с 
+                                        Политикой конфиденциальности</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
                 <section class="tab-section">
                     <h2 class="container page-title">Филиалы FoxSmart</h2>
                     <div class="tab">

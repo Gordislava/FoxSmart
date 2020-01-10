@@ -95,6 +95,9 @@ h4 {
     font-family: $lato-black;
     margin: 0;
     padding-bottom: 12px;
+    @media (max-width: 600px) {
+        font-size: 18px;
+    }
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -156,6 +159,9 @@ input[type="radio"].visually-hidden {
     margin-bottom: 10px;
     padding-top: 30px;
     text-transform: none;
+    span {
+        color: $accent;
+    }
     @media (max-width: 768px) {
         font-size: 26px;
         line-height: 35px;
