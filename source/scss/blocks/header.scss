@@ -185,7 +185,7 @@
 
 .header__main-menu {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 10px;
     position: relative;
     @media (max-width: 1024px) {
@@ -221,6 +221,120 @@
         }
         @media (max-width: 1024px) {
             display: none;
+        }
+        .main-menu__item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            padding-left: 15px;
+            &:first-child {
+                padding-left: 0;
+            }
+            @media (max-width: 1024px) {
+                padding: 0;
+            }
+        }
+        .main-menu__item--select {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 7px;
+                height: 6px;
+                background-image: url("../../img/icons/down-arrow.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                right: 15px;
+                top: 17px;
+                cursor: pointer;
+                @media (max-width: 1024px) {
+                    width: 13px;
+                    height: 12px;
+                    right: 20px; 
+                    top: 20px;
+                    z-index: 999999;
+                }
+            }
+            
+            &:hover {
+                background-color: $bg-color;
+                box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.18);
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                transition: all .25s ease-in;
+                @media (max-width: 1024px) {
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+            }
+            &:hover .main-menu__dropdown-list {
+                left: 0;
+
+
+            }
+            &.active {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+
+        }
+        .main-menu__dropdown-list {
+            @include list-norm;
+            display: block;
+            position: absolute;
+            width: 250px;
+            background-color: $bg-color;
+            box-shadow: 0px 30px 30px 0 rgba(0, 0, 0, 0.18);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            overflow: hidden;
+
+            left: -9999px;
+            margin-top: 5px;
+            @media (max-width: 1024px) {
+                position: relative;
+                z-index: 99999;
+                opacity: 1;
+                width: 100%;
+                box-shadow: none;
+                max-height: 0;
+                margin-top: -2px;
+                border-radius: 0px;
+            }
+            .main-menu__dropdown-link {
+                color: $text-light;
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-family: $exo2-bold;
+                padding: 20px 20px 20px 35px;
+                position: relative;
+                width: 100%;
+                &:hover {
+                    color: $bg-color;
+                    background-color: $accent;
+                    
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $accent;
+                    top: calc(50% - 2px);
+                    left: 20px;
+                    @media (max-width: 1024px) {
+                        display: none;
+                    }
+                }
+                &:hover::before {
+                    background-color: $bg-color;
+                }
+            }
         }
     }
     .header__menu-icon {
@@ -360,6 +474,9 @@
         background-image: none;
     }
 }
+
+
+
 
 .breadcrumb {
     width: 100%;

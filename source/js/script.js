@@ -1,3 +1,18 @@
+var acc = document.getElementsByClassName("accordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.lastElementChild;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+
 function openCity(evt, cityName) {
     var i, tabcontent, tablink;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -13,3 +28,4 @@ function openCity(evt, cityName) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
