@@ -167,3 +167,9 @@ input[type="radio"].visually-hidden {
         line-height: 35px;
     }
 }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
