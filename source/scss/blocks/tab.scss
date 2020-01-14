@@ -170,3 +170,135 @@
         height: 625px;
     }
 }
+
+
+
+// Styles for tabs in contacts-page
+
+.tab-section--contacts {
+    position: relative;
+    overflow: visible;
+    .tab {
+        overflow: visible;
+    }
+    .tab__wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        position: absolute;
+        margin-top: -60px;
+        left: 50%;
+        margin-left: -640px;
+        z-index: 999;
+        width: 100%;
+    }
+    .tab__link {
+        background-color: $bg-color;
+        color: $text;
+        padding: 30px 30px 30px 70px;
+        min-height: 225px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 5px 16px 0 rgba(182, 200, 212, 0.24);
+        max-width: none;
+        width: 25%;
+        margin-right: 0;
+        border: 2px solid transparent;
+        .tab__title {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 7px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 33px;
+                height: 33px;
+                background-color: $accent-light;
+                border-radius: 50%;
+                left: -50px;
+            }
+        }
+        .block-phone__text {
+          text-transform: uppercase;
+          font-size: 11px;
+          margin-bottom: 4px;
+          position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 33px;
+                height: 33px;
+                background-color: $accent-light;
+                border-radius: 50%;
+                left: -50px;
+                top: -5px;
+            }
+        }
+        .block-phone__link {
+            color: $text-light;
+            font-family: $lato-black;
+            font-size: 17px;
+            line-height: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            margin-bottom: 20px;
+            font-family: $lato-bold;
+            flex-grow: 1;
+        }
+    }
+    .tab__link--general {
+        min-height: none;
+    }
+    .tab__social {
+        margin-bottom: 0;
+    }
+
+    .tab__link:hover {
+        border: solid 2px $accent;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 15px solid $accent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid transparent;
+            position: absolute;
+            bottom: -32px;
+            left: 50%;
+            margin-left: -19px;
+            z-index: 1;
+        }
+    }
+
+    .tab__link.active {
+        border: solid 2px $accent;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 15px solid $accent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid transparent;
+            position: absolute;
+            bottom: -32px;
+            left: 50%;
+            margin-left: -19px;
+            z-index: 1;
+        }
+    }
+}
