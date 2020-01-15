@@ -480,6 +480,9 @@
     background: 
                 url("../../img/pattern.png") no-repeat left top 30px,
                 radial-gradient(circle at 0 0, #eaf5fb, #f8fafb);
+    @media (max-width: 768px) {
+        padding-bottom: 0;
+    }
 }
 
 

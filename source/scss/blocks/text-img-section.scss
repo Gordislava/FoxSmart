@@ -83,3 +83,16 @@
     justify-content: space-between;
 }
 
+.text-img-section--repetitors {
+    margin-top: 60px;
+    .page-title {
+        text-align: left;
+    }
+    .text-wrap {
+        padding-top: 0;
+    }
+    img {
+        width: 35%;
+        margin-top: -85px;
+    }
+}
