@@ -64,19 +64,46 @@
 
 // time-banner styles
 
-.time-banner__wrap {
-    background-color: #3c86d3;
-    background-repeat: no-repeat;
-    background-position: center;
 
+
+.time-banner__wrap {
+    background-color: $bg-color;
+    border: 3px solid #009ae5;
+    background-repeat: no-repeat;
+    background-position: left -4px center;
+    background-image: url("../../img/time-banner-full.png");
+    background-size: cover;
     overflow: hidden;
-    padding: 25px 40px 25px 30px;
+    padding: 5px 20px 25px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    background-size: cover;
     flex-wrap: wrap;
+    @media (max-width: 1200px) {
+        background-image: linear-gradient(114deg, rgba(0,154,229,1) 0%, rgba(0,154,229,1) 38%, rgba(255,255,255,1) 38%, rgba(255,255,255,0) 100%);
+    }
+    @media (max-width: 1024px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 9px;
+    }
+    // @media (max-width: 768px) {
+    //     background-image: linear-gradient(189deg, rgba(0,154,229,1) 0%, rgba(0,154,229,1) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
+    //     flex-direction: column;
+    //     text-align: center;
+    //     padding-top: 15px;
+    //     min-height: 530px;
+    //     background-size: cover;
+    // }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        background-image: url("../../img/time-banner-mob.png");
+        text-align: center;
+        background-position: center top;
+        padding-top: 15px;
+        min-height: 530px;
+    }
 }
 
 .time-banner__title {
@@ -87,7 +114,19 @@
     color: $bg-color;
     font-family: $exo2-bold;
     max-width: 260px;
+    margin-right: 10px;
+    @media (max-width: 600px) {
+        font-size: 21px;
+        text-align: center;
+        margin-right: 0;
+    }
 }
+
+.time-banner_item-title {
+    height: 100%;
+}
+
+
 .time-banner__text-dark {
     font-family: $exo2-bold;
     font-size: 14px;
@@ -116,6 +155,10 @@
         top: 5px;
         opacity: 0.1;
     }
+    @media (max-width: 600px) {
+        margin: 0;
+        width: 210px;
+    }
 }
 
 .time-banner__text-accent {
@@ -136,6 +179,13 @@
     justify-content: center;
     .btn {
         max-width: 200px;
+    }
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+        margin: 0;
     }
 }
 

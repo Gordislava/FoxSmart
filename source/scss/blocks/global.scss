@@ -168,8 +168,28 @@ input[type="radio"].visually-hidden {
     }
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+ul:not([class]) {
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px;
+}
+
+ul:not([class]) li {
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 24px;
+    &::before {
+        content: url('../../img/checked.png');
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        top: -2px;
+        left: 0;
+    }
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
