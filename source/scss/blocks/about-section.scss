@@ -232,9 +232,16 @@
     }
 }
 
+.card-reason {
+    margin-bottom: 50px;
+    .page-title {
+        padding-top: 55px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+}
 
-
-.kkk__list {
+.card-reason__list {
     @include list-norm;
     display: flex;
     align-items: flex-start;
@@ -242,7 +249,7 @@
     flex-wrap: wrap;
 }
 
-.kkk__item {
+.card-reason__item {
     max-width: 30%;
     padding-top: 110px;
     background-image: url("../../img/icons/laptop.svg");
@@ -253,7 +260,7 @@
     flex-direction: column;
 }
 
-.kkk__title {
+.card-reason__title {
     font-size: 15px;
     font-family: $exo2-bold;
     margin: 0;

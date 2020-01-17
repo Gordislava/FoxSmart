@@ -16,6 +16,10 @@
     }
 }
 
+.card--index {
+    margin-bottom: 60px;
+}
+
 .card__list {
     @include list-norm;
     display: flex;
@@ -61,6 +65,7 @@
     @media (max-width: 600px) {
         padding-left: 0;
         padding-top: 110px;
+        margin: auto;
     }
     br {
         display: none;
@@ -155,6 +160,86 @@
         z-index: 1;
     }
 }
+
+.card__list--index {
+    margin-bottom: 35px;
+    
+}
+
+.card__item--small {
+    padding: 25px 25px;
+    min-height: 135px;
+    @media (max-width: 600px) {
+        text-align: left;
+        background-position: left 25px top 20px;
+        min-height: 100px;
+    }
+    h4 {
+        font-size: 17px;
+        padding-bottom: 4px;
+        @media (max-width: 600px) {
+            font-size: 15px;
+        }
+    }
+    .card__wrap {
+        justify-content: space-evenly;
+        @media (max-width: 600px) {
+            padding-top: 0;
+            padding-left: 80px;
+            margin: 0;
+        }
+    }
+}
+
+.card__item--small.card__item-languages {
+    background-image: url("../../img/icons/languages.svg");
+    background-size: 55px 55px;
+}
+
+.card__item--small.card__item-scratch {
+    background-image: url("../../img/icons/editing.svg");
+    background-size: 55px 55px;
+}
+
+.card__item--small.card__item-robot {
+    background-image: url("../../img/icons/robot.svg");
+    background-size: 55px 55px;
+}
+
+.card__item--small.card__item-chess {
+    background-image: url("../../img/icons/chess-pieces.svg");
+    background-size: 55px 55px;
+}
+
+.card__item--small.card__item-calligraphy {
+    background-image: url("../../img/icons/edit.svg");
+    background-size: 51px 55px;
+}
+
+.card__item--small.card__item-1c {
+    background-size: 54px 66px;
+}
+
+.card__item--small.card__item-autocad {
+    background-size: 50px 55px;
+}
+
+.card__item--small.card__item-calligraphy {
+    background-image: url("../../img/icons/edit.svg");
+    background-size: 51px 55px;
+}
+
+.card__item--small.card__item-photoshop {
+    background-image: url("../../img/icons/paint.svg");
+    background-size: 51px 55px;
+}
+
+.card__item--small.card__item-pc {
+    background-image: url("../../img/icons/gaming.svg");
+    background-size: 55px 47px;
+}
+
+
 
 .card-advantage {
     margin-bottom: 60px;
