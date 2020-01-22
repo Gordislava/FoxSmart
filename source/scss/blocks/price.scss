@@ -1,0 +1,276 @@
+.price {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.price__name-list {
+    @include list-norm;
+    width: 330px;
+    @media (max-width: 1200px) {
+        width: auto;
+        max-width: 330px;
+    }
+}
+
+.price__name-item {
+    width: 100%;
+    border: solid 1px #dddfe1;
+    border-bottom: none;
+    background-color: #f1f4f6; 
+    padding: 0 24px 0 24px;
+    font-family: $lato-bold;
+    font-size: 15px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    &:last-child {
+        border-bottom: solid 1px #dddfe1;
+    }
+}
+
+.price__value-list {
+    @include list-norm;
+    width: 305px;
+    @media (max-width: 1200px) {
+        width: auto;
+        max-width: 305px;
+    }
+    @media (max-width: 768px) {
+        width: 60%;
+        max-width: none;
+        margin: auto;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.price__value-list--center {
+    box-shadow: 0px 12px 35px 0 rgba(27, 32, 35, 0.08);
+    @media (max-width: 768px) {
+        box-shadow: none;
+    }
+}
+
+.price__value-item {
+    @include list-norm;
+    width: 100%;
+    height: 65px;
+    color: #35373a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: solid 1px #e6ebed;
+    border-top: none;
+    @media (max-width: 1200px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @media (max-width: 768px) {
+        border: none;
+    }
+    .price-color {
+        color: $accent;
+        font-size: 16px;
+        font-family: $exo2-bold;
+    }
+}
+
+.price__value-item--head {
+    font-family: $lato-heavy;
+    font-size: 21px;
+    font-weight: 700;
+    height: 70px;
+    border: solid 1px #e6ebed;
+    @media (max-width: 1200px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .price__city-wrap {
+        width: auto;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 1px;
+            background-color: #e6ebed;
+            top: 50%;
+            left:0;
+            margin-top: -3px;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 14px;
+            height: 1px;
+            background-color: #e6ebed;
+            top: 50%;
+            right:0;
+            margin-top: -3px;
+        }
+    }
+    span {
+        padding-left: 44px;
+        padding-right: 44px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 15px;
+            background-image: url("../../img/icons/star.svg");
+            background-repeat: no-repeat;
+            background-size: 14px 15px;
+            background-position: right center;
+            top: 50%;
+            margin-top: -9px;
+            left: 0;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 35px;
+            height: 15px;
+            background-image: url("../../img/icons/star.svg");
+            background-repeat: no-repeat;
+            background-size: 14px 15px;
+            background-position: left center;
+            top: 50%;
+            margin-top: -9px;
+            right: 0;
+        }
+    }
+}
+
+.price__value-item--head-left {
+    border-top-left-radius: 5px;
+}
+
+.price__value-item--head-right {
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+}
+
+.price__value-item--blue {
+    background-color: #f1f8fb;
+    @media (max-width: 768px) {
+        background-color: $bg-color;
+    }
+}
+
+.price__name-item--hidden {
+    display: none;
+    text-align: center;
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f8fb;
+        border: none;
+    }
+}
+
+.price__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 5px;
+    @media (max-width: 1200px) {
+        justify-content: center;
+    }
+}
+
+.price__column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.price__name-column {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.price__city-column {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.price__value-item--empty {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.price__value-item--descr {
+    @media (max-width: 768px) {
+        background-color: #f1f8fb;
+    }
+}
+
+.price-column-item {
+    @media (max-width: 768px) {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 7px;
+            height: 6px;
+            background-image: url("../../img/icons/down-arrow.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            right: 15px;
+            top: 17px;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                width: 13px;
+                height: 12px;
+                right: 20px; 
+                top: 30px;
+                z-index: 99;
+            }
+        }
+        &.active {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+}
+
+.price__value-list.panel {
+    @media (max-width: 768px) {
+        position: relative;
+        z-index: -9;
+        opacity: 0;
+        width: 100%;
+        box-shadow: none;
+        max-height: 0;
+        // margin-top: 10px;
+    }
+}
+
+.price-column-item.accordeon.active .price__value-list.panel {
+    @media (max-width: 768px) {
+        opacity: 1;
+    }
+}
+
+.price-column-item.accordeon.active .price__value-list.panel {
+    @media (max-width: 768px) {
+        opacity: 1;
+    }
+}
