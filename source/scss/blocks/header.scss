@@ -446,6 +446,22 @@
     }
 }
 
+.header__title--index  {
+    @media (max-width: 600px) {
+        display: block;
+        .page-title {
+            font-size: 27px;
+            line-height: 35px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        .header__title-description {
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+}
+
 .header__title-description {
     margin: 0;
     padding: 0;
@@ -482,6 +498,107 @@
                 radial-gradient(circle at 0 0, #eaf5fb, #f8fafb);
     @media (max-width: 768px) {
         padding-bottom: 0;
+    }
+}
+
+.header-promo-block {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @media (max-width: 420px) {
+        padding: 0 15px;
+    }
+    @media (max-width: 1280px) {
+        max-width: none;
+    }
+}
+
+.header-promo-block__list {
+    @include list-norm;
+    max-width: 60%;
+    display: flex;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        max-width: none;
+    }
+    @media (max-width: 768px) {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+.header-promo-block__item {
+    background-color: #fff;
+    padding: 25px 10px 25px 30px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    min-width: 240px;
+    box-shadow: 0px 5px 16px 0 rgba(0, 0, 0, 0.03);
+    @media (max-width: 768px) {
+        margin-bottom: 3px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+        min-width: none;
+    }
+    
+}
+
+.header-promo-block__item--students {
+
+}
+
+.header-promo-block__item--teachers {
+
+}
+
+.header-promo-block__item--filials {
+
+}
+
+.header-promo-block__text-blue {
+    padding: 0;
+    margin: 0;
+    color: $accent;
+    font-size: 17px;
+    font-family: $exo2;
+    text-transform: lowercase;
+    span {
+        display: block;
+        font-size: 53px;
+        padding-top: 5px;
+        font-family: $lato-light;
+    }
+}
+
+.header-promo-block__text-dark {
+    font-family: $exo2;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+}
+
+.header-promo-block__btn {
+    margin-bottom: 25px;
+    @media (max-width: 600px) {
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -592,3 +709,5 @@
         color: $bg-color;
     }
 }
+
+
