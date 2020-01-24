@@ -1,0 +1,22 @@
+.slider__wrap {
+    width: 85%;
+    margin: auto;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.glide__arrows,
+.glide__bullets {
+    display: none;
+    @media (max-width: 1024px) {
+        display: block;
+    }
+}
+
+.about-section--slider .glide {
+    display: none;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
