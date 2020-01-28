@@ -305,7 +305,7 @@
                             <h2 class="consult-banner__title">Запись и консультация</h2>
                             <p class="consult-banner__text">Мы всегда готовы ответить на все интересующие вопросы по любому из направлений нашего центра!</p>
                         </div>
-                        <button class="btn btn-orange">Записаться на курсы</button>
+                        <button class="btn btn-orange js-order-button">Записаться на курсы</button>
                     </section>
                 </section>
                 <section class="tab-section">
@@ -404,9 +404,49 @@
                     <p class="footer__copyright">&#169; 2019 Образовательный центр FoxSmart</p>
                 </div>
             </footer>
+            <section class="modal modal-form visually-hidden">
+                <div class="modal__container">
+                    <div class="modal__wrapper">
+                        <h2 class="modal__title">Заявка на бесплатную консультацию</h2>
+                        <p>Мы с радостью ответим на все интересующие Вас вопросы</p>
+                        <form action="" class="form">
+                            <div class="form__wrapper">
+                                <div class="form__input-wrapper form__input--size-full">
+                                    <input type="text" name="" id="" class="form__input" placeholder="Ваше имя">
+                                    <input type="tel" name="" id="" class="form__input" placeholder="Ваш телефон">
+                                </div>
+                                <div class="select__wrap">
+                                    <select name="" id="" class="form__input form__input--select form__input--size-full" style="color: #b8babb;">
+                                        <option selected disabled class="placeholder">Ваш город</option>
+                                        <option value="Минск" style="padding-top: 18px; padding-bottom: 18px;">Минск</option>
+                                        <option value="Борисов">Борисов</option>
+                                        <option value="Бобруйск">Бобруйск</option>
+                                        <option value="Жлобин">Жлобин</option>
+                                    </select>
+                                </div>
+                                <textarea name="" id="" class="form__input form__input--size-full form__input--textarea" placeholder="Сообщение"></textarea>
+                                <div class="form__btn-wrap">
+                                    <button class="btn btn-orange" type="submit">Отправить</button>
+                                    <p class="form-small__note form-small__note-modal">Нажимая на кнопку «Оставить заявку», вы соглашаетесь с 
+                                        Политикой конфиденциальности</p>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="modal__close-button"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal modal-info">
+                <div class="modal__container">
+                    <div class="modal__wrapper">
+                        <h2 class="modal__title">Спасибо</h2>
+                        <p>Ваша заявка отправлена. Мы свяжемся с Вами в ближайшее время по указанным контактам</p>
+                        <button class="modal__close-button"></button>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-    <script src="js/tabs.js"></script>
     <script src="js/glide.min.js"></script>
     <script>
         new Glide('.glide', {
@@ -457,11 +497,5 @@
         }).mount()
     </script>
     <script src="js/script.js"></script>
-    <script>
-        var module = {exports: {}};
-	    var exports = module.exports;
-        import initTabs from 'future-tabs';
-        initTabs('.tabs');
-    </script>
 </body>
 </html>

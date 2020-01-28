@@ -1,5 +1,5 @@
 .modal {
-    display: none;
+    display: block;
     width: 100vw;
     height: 100%;
     position: fixed;
@@ -7,6 +7,26 @@
     top: 0;
     left: 0;
     opacity: 1;
+    p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .form-small__note-modal {
+        text-align: left;
+        &::before {
+            left: -70px;
+            top: -12px;
+        }
+        @media (max-width: 600px) {
+            width: 70%;
+            max-width: none;
+            margin-left: auto;
+        }
+    }
+    .form .form__wrapper {
+        margin-bottom: 0;
+    }
 }
 
 .modal::before {
@@ -14,7 +34,7 @@
     position: absolute;
     width: 100vw;
     height: 100%;
-    background-color: $bg-color;
+    background-color: $text;
     opacity: 0.9;
     z-index: 100;
 }
@@ -22,39 +42,114 @@
 .modal__container {
     display: block;
     box-sizing: border-box;
-    width: 320px;
+    width: 685px;
+    height: auto;
     background-color: $bg-color;
-    border: 1px solid rgba(0, 1, 1, 0.25);
-    box-shadow: 0 3px 12px rgba(0, 1, 1, 0.25);
     margin: 0 auto;
     margin-bottom: 50px;
     position: fixed;
     top: 50%;
-    margin-top: -242px;
+    margin-top: -275px;
     left: 50%;
-    margin-left: -160px;
+    margin-left: -342px;
     z-index: 200;
     opacity: 1;
+    @media (max-width: 768px) {
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+    }
+    @media (max-width: 600px) {
+        margin-top: 0;
+        top: 5%;
+    }
 }
 
 .modal__wrapper {
     width: auto;
-    max-width: 767px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 600px) {
+        padding: 20px;
+    }
 }
 
-@media (min-width: 768px) {
-    .modal__container {
-        width: 566px;
-        margin-left: -283px;
+.modal__title {
+    font-family: $lato-heavy;
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    @media (max-width: 600px) {
+        font-size: 21px;
     }
+}
 
-    .modal__wrapper {
-        padding-left: 100px;
-        padding-right: 100px;
+.modal__close-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $accent-light;
+    background-image: url("../../img/close-button.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    &:hover {
+        background-color: $accent-gray;
+    }
+    @media (max-width: 375px) {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+.modal.modal-info {
+    &::before {
+        display: none;
+    }
+}
+
+.modal-info .modal__container {
+    display: block;
+    box-sizing: border-box;
+    width: 380px;
+    height: auto;
+    background-color: $bg-color;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: fixed;
+    top: 50%;
+    margin-top: -275px;
+    left: 50%;
+    margin-left: -190px;
+    z-index: 200;
+    opacity: 1;
+    @media (max-width: 768px) {
+        width: 90%;
+        left: 50%;
+        margin-left: -45%;
+    }
+    @media (max-width: 600px) {
+        margin-top: 0;
+        top: 5%;
+    }
+}
+
+.modal-info .modal__wrapper {
+    width: auto;
+    margin: 0 auto;
+    padding: 80px 45px 65px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 600px) {
+        padding: 20px;
     }
 }
