@@ -1,6 +1,9 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 @import "blocks/vars.scss";
 @import "blocks/mixin.scss";
 @import "blocks/global.scss";
+@import "blocks/slider.scss";
 @import "blocks/footer.scss";
 @import "blocks/consult-banner.scss";
 @import "blocks/tab.scss";
@@ -9,5 +12,5 @@
 @import "blocks/text-img-section.scss";
 @import "blocks/about-section.scss";
 @import "blocks/price.scss";
-@import "blocks/slider.scss";
+
 @import "blocks/modal.scss";

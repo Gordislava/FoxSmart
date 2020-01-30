@@ -54,6 +54,9 @@
     a {
         color: $accent;
         text-decoration: underline;
+        &:hover {
+            color: #ff9308;
+        }
     }
 }
 

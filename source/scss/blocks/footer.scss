@@ -97,12 +97,15 @@
 }
 
 .block-phone {
-    padding-left: 50px;
-    background-image: url("../../img/phone-orange.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 33px 33px;
     display: flex;
+    .block-phone-wrap {
+        max-width: 290px;
+        padding-left: 50px;
+        background-image: url("../../img/phone-orange.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 33px 33px;
+    }
     .block-phone__text {
         margin: 0;
         padding: 0;

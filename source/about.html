@@ -2,8 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/glide.core.min.css">
-    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="css/first-screen.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,6 +104,7 @@
                         </div>        
                 </section>
                 <section class="container about-section">
+                    <h2 class="page-title">Почему стоит выбрать именно FoxSmart:</h2>
                     <div class="about-section__wrap">
                         <div class="about-section__list">
                             <div class="about-section__item about-section__item--full about-section__item--full-1">
@@ -170,7 +169,7 @@
                     </div>
                 </section>
                 <section class="container about-section about-section--slider">
-                    <h2 class="page-title">Почему стоит выбрать именно FoxSmart:</h2>
+                    
                     <div class="glide">
                         <div class="glide__track" data-glide-el="track">
                             <ul class="glide__slides about-section__wrap">
@@ -230,51 +229,6 @@
                             <button class="glide__bullet" data-glide-dir="=0"></button>
                             <button class="glide__bullet" data-glide-dir="=1"></button>
                             <button class="glide__bullet" data-glide-dir="=2"></button>
-                        </div>
-                    </div>
-                </section>
-                <section class="card-reason">
-                    <div class="container">
-                        <div class="slider__wrap">
-                            <h2 class="page-title">Почему FoxSmart?</h2>
-                            <div class="glide glide-second">
-                                <div class="glide__track" data-glide-el="track">
-                                    <ul class="glide__slides card-reason__list">
-                                        <li class="glide__slide card-reason__item card-reason__item-1">
-                                            <h3 class="card-reason__title">Высокий профессионализм</h3>
-                                            <ul>
-                                                <li>Проверенные методики обучения</li>
-                                                <li>Профессиональные педагоги</li>
-                                            </ul>
-                                        </li>
-                                        <li class="glide__slide card-reason__item card-reason__item-1">
-                                            <h3 class="card-reason__title">Высокий профессионализм</h3>
-                                            <ul>
-                                                <li>Проверенные методики обучения</li>
-                                                <li>Профессиональные педагоги</li>
-                                                <li>Компактная подача материала</li>
-                                            </ul>
-                                        </li>
-                                        <li class="glide__slide card-reason__item card-reason__item-1">
-                                            <h3 class="card-reason__title">Высокий профессионализм</h3>
-                                            <ul>
-                                                <li>Проверенные методики обучения</li>
-                                                <li>Профессиональные педагоги</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="glide__arrows" data-glide-el="controls">
-                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                                </div>
-                                <div class="glide__bullets" data-glide-el="controls[nav]">
-                                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                                </div>
-    
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -436,7 +390,7 @@
                     </div>
                 </div>
             </section>
-            <section class="modal modal-info">
+            <section class="modal modal-info visually-hidden">
                 <div class="modal__container">
                     <div class="modal__wrapper">
                         <h2 class="modal__title">Спасибо</h2>
@@ -473,28 +427,28 @@
 
         }).mount()
 
-        new Glide('.glide-second', {
-            type: 'carousel',
-            startAt: 0,
-            swipeThreshold: false,
-            dragThreshold: false,       
-            breakpoints: {
-            2560: {
-            perView: 3,
-            autoplay: false
-            },
-            1024: {
-            perView: 2,
-            autoplay: 4000,
-            swipeThreshold: true,
-            dragThreshold: true
-            },
-            600: {
-            perView: 1
-            }
-        }
+        // new Glide('.glide-second', {
+        //     type: 'carousel',
+        //     startAt: 0,
+        //     swipeThreshold: false,
+        //     dragThreshold: false,       
+        //     breakpoints: {
+        //     2560: {
+        //     perView: 3,
+        //     autoplay: false
+        //     },
+        //     1024: {
+        //     perView: 2,
+        //     autoplay: 4000,
+        //     swipeThreshold: true,
+        //     dragThreshold: true
+        //     },
+        //     600: {
+        //     perView: 1
+        //     }
+        // }
 
-        }).mount()
+        // }).mount()
     </script>
     <script src="js/script.js"></script>
 </body>

@@ -43,7 +43,7 @@
     padding-top: 5px;
     max-width: 200px;
     text-transform: uppercase;
-    
+
 }
 
 .about-section__item-wrap {
@@ -169,11 +169,16 @@
 
 
 .about-section--slider {
-    display: none;
+    display: block;
     @media (max-width: 768px) {
         display: block;
     }
 }
+
+.about-section--slider .glide {
+    display: block;
+}
+
 .about-section--slider .about-section__item {
     margin-bottom: 40px;
 }
@@ -186,40 +191,8 @@
     padding-left: 0;
 }
 
-.glide__arrow--left {
-    background-image: url("../../img/icons/go-back-left-arrow.svg");
-}
 
-.glide__arrow--right {
-    background-image: url("../../img/icons/right-arrow-forward.svg");
-}
 
-.glide__arrows {
-    position: relative;
-    margin-top: 50px;
-}
-
-.glide__bullet {
-    width: 9px;
-    height: 9px;
-    background-color: $accent-light;
-    margin-right: 13px;
-    border-radius: 50%;
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.glide__arrow {
-    position: absolute;
-    display: block;
-}
-
-.glide__bullet.active {
-    width: 13px;
-    height: 13px;
-    background-color: $accent;
-}
 
 .about-section__item--left {
     @media (max-width: 768px) {
@@ -259,6 +232,15 @@
     background-size: 92px 92px;
     display: flex;
     flex-direction: column;
+}
+
+.card-reason__item-2 {
+    background-image: url("../../img/icons/businessman\ \(1\).svg");
+    background-size: 110px 110px;
+}
+
+.card-reason__item-3 {
+    background-image: url("../../img/icons/clipboard.svg");
 }
 
 .card-reason__title {

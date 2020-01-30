@@ -111,11 +111,11 @@
     }
 }
 
-.modal.modal-info {
-    &::before {
-        display: none;
-    }
-}
+// .modal.modal-info {
+//     &::before {
+//         display: none;
+//     }
+// }
 
 .modal-info .modal__container {
     display: block;
@@ -127,7 +127,7 @@
     margin-bottom: 50px;
     position: fixed;
     top: 50%;
-    margin-top: -275px;
+    margin-top: -150px;
     left: 50%;
     margin-left: -190px;
     z-index: 200;
@@ -149,7 +149,27 @@
     padding: 80px 45px 65px;
     display: flex;
     flex-direction: column;
+    position: relative;
     @media (max-width: 600px) {
         padding: 20px;
+        padding-top: 60px;
     }
+    &::before {
+        position: absolute;
+        content: "";
+        width: 106px;
+        height: 106px;
+        background-color: $bg-color;
+        border: 2px solid $accent;
+        border-radius: 50%;
+        box-shadow: 0px 4px 21px 18px rgba(1, 9, 21, 0.05);
+        background-image: url("../img/checked-red.png");
+        background-size: 37px 29px;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: -53px;
+        left: 50%;
+        margin-left: -53px;
+        z-index: 250;
+    } 
 }

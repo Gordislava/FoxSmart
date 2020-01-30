@@ -6,6 +6,30 @@
     position: relative;
 }
 
+.header--index {
+    background: 
+                url("../../img/pattern-index.png") no-repeat left top,
+                radial-gradient(circle at 0 0, #eaf5fb, #f8fafb);
+    @media (max-width: 1024px) {
+        background: none;
+        background-color: $accent-light;
+    }
+}
+
+.header--index .header__wrap {
+    background: url("../../img/illustrations/main.svg") no-repeat right bottom 10px,
+    url("../../img/ellipse-index.png") no-repeat right bottom 20px;     
+    background-size: 487px 481px, 481px 356px;
+    @media (max-width: 768px) {
+        background-size: 300px auto, 190px auto;
+        background-position: right -50px bottom 10px;
+    }
+    @media (max-width: 425px) {
+        background-size: 340px auto, 190px auto;
+        background-position: right -200px bottom 50px;
+    }
+}
+
 .header__row {
     width: 100%;
     max-width: 1280px;
@@ -97,6 +121,7 @@
         padding-left: 45px;
         position: relative;
         margin-left: 60px;
+        transition: all .3s ease-in;
         @media (max-width: 1024px) {
             padding-left: 20px;
             margin-left: 0;
@@ -109,6 +134,7 @@
             background-color: $text-gray;
             left: 45px;
             bottom: 0;
+            transition: all .3s ease-in;
             @media (max-width: 1024px) {
                 width: calc(100% - 20px);
                 left: 20px;
@@ -128,6 +154,7 @@
             background-size: 13px 15px;
             left: 0;
             top: -50%;
+            transition: all .3s ease-in;
             @media (max-width: 1024px) {
                 width: 13px;
                 height: 17px;
@@ -143,6 +170,7 @@
             font-size: 13px;
             color: $accent;
             font-family: $exo2;
+            transition: all .3s ease-in;
             @media (max-width: 1024px) {
                 color: $bg-color;
             }
@@ -150,11 +178,30 @@
     }
 }
 
+.header__address:hover::before {
+    box-shadow: 0px 5px 16px 0 rgba(0, 0, 0, 0.14);
+}
+
+.header__group-inst-address .header__address:hover a {
+    color: $opposite-dark;
+}
+
+.header__address:hover::after {
+    background-color: $opposite-dark;
+}
+
 .header__row .block-phone {
     width: auto;
     justify-content: space-between;
     align-items: center;
     padding-top: 7px;
+    .block-phone-wrap {
+        max-width: 290px;
+        padding-left: 50px;
+        background-image: url("../../img/phone-orange-white.png");
+        background-size: 50px 50px;
+        background-position: left top -5px;
+    }
     .block-phone__link {
         color: $text-light;
 
@@ -310,7 +357,7 @@
                 text-transform: uppercase;
                 font-size: 12px;
                 font-family: $exo2-bold;
-                padding: 20px 20px 20px 35px;
+                padding: 15px 20px 15px 35px;
                 position: relative;
                 width: 100%;
                 &:hover {
@@ -524,6 +571,9 @@
     margin-bottom: 30px;
     border-radius: 8px;
     overflow: hidden;
+    @media (max-width: 1024px) {
+        max-width: 100%;
+    }
     @media (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
@@ -532,9 +582,12 @@
         max-width: none;
     }
     @media (max-width: 768px) {
-        width: 85%;
+        width: 65%;
         margin: auto;
         margin-bottom: 30px;
+    }
+    @media (max-width: 475px) {
+        width: 85%;
     }
 
 }
@@ -561,15 +614,21 @@
 }
 
 .header-promo-block__item--students {
-
+    background-image: url("../../img/icons/reading.svg");
+    background-size: 127px 127px;
+    background-position: right -10px bottom -10px;
 }
 
 .header-promo-block__item--teachers {
-
+    background-image: url("../../img/icons/education.svg");
+    background-size: 120px 120px;
+    background-position: right -10px bottom -10px;
 }
 
 .header-promo-block__item--filials {
-
+    background-image: url("../../img/icons/bar-chart.svg");
+    background-size: 115px 120px;
+    background-position: right -10px bottom -5px;
 }
 
 .header-promo-block__text-blue {

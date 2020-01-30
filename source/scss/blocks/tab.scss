@@ -239,6 +239,10 @@
                 width: 33px;
                 height: 33px;
                 background-color: $accent-light;
+                background-image: url("../../img/icons/placeholder-filled-point.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 15px 19px;
                 border-radius: 50%;
                 left: -50px;
                 @media (max-width: 768px) {
@@ -257,6 +261,10 @@
                 width: 33px;
                 height: 33px;
                 background-color: $accent-light;
+                background-image: url("../../img/icons/phone-call-button.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 14px 14px;
                 border-radius: 50%;
                 left: -50px;
                 top: -5px;

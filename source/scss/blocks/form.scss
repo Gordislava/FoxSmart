@@ -269,14 +269,14 @@
         position: absolute;
         content: "";
         width: 46px;
-        height: 47px;
+        height: 54px;
         background-color: #fff;
         background-image: url("../img/icons/down-arrow.svg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 20%;
         right: 1px;
-        top: 3px;
+        top: 1px;
         pointer-events: none;
         border-left: 1px solid #d7d9db;
     }
@@ -328,6 +328,9 @@ textarea {
     @media (max-width: 600px) {
         max-width: 100%;
         flex-direction: column;
+    }
+    .form .form__btn-wrap .btn {
+        width: 100%;
     }
 }
 
