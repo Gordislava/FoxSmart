@@ -4,14 +4,13 @@
 }
 
 .about-section__wrap {
-    background-image: url("../../img/logo-about.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60% auto;
     width: 100%;
     padding-top: 18px;
     @media (max-width: 768px) {
-        background-image: none;
+        background-size: 0px 0px;
     }
 }
 
@@ -91,20 +90,20 @@
 }
 
 .about-section__item--2::before {
-    background-image: url("../../img/icons/reading\ \(1\).svg");
+    background-image: url("../img/icons/reading\ \(1\).svg");
     width: 47px;
 }
 .about-section__item--3::before {
-    background-image: url("../../img/icons/teaching.svg");
+    background-image: url("../img/icons/teaching.svg");
 }
 .about-section__item--4::before {
-    background-image: url("../../img/icons/notes.svg");
+    background-image: url("../img/icons/notes.svg");
 }
 .about-section__item--5::before {
-    background-image: url("../../img/icons/online.svg");
+    background-image: url("../img/icons/online.svg");
 }
 .about-section__item--6::before {
-    background-image: url("../../img/icons/teacher\ \(1\).svg");
+    background-image: url("../img/icons/teacher\ \(1\).svg");
 }
 
 
@@ -129,9 +128,38 @@
 }
 
 .about-section__item--10::after {
-    background-image: url("../../img/icons/online\ \(1\).svg");
+    background-image: url("../img/icons/online\ \(1\).svg");
+}
+.about-section__item--11::after {
+    background-image: url("../img/icons/head.svg");
+}
+.about-section__item--12::after {
+    background-image: url("../img/icons/diploma.svg");
+}
+.about-section__item--9::after {
+    background-image: url("../img/icons/customer-service.svg");
+}
+.about-section__item--8::after {
+    background-image: url("../img/icons/thesis.svg");
 }
 
+@media(max-width: 768px) {
+    .about-section__item--10::before {
+        background-image: url("../img/icons/online\ \(1\).svg");
+    }
+    .about-section__item--11::before {
+        background-image: url("../img/icons/head.svg");
+    }
+    .about-section__item--12::before {
+        background-image: url("../img/icons/diploma.svg");
+    }
+    .about-section__item--9::before {
+        background-image: url("../img/icons/customer-service.svg");
+    }
+    .about-section__item--8::before {
+        background-image: url("../img/icons/thesis.svg");
+    }
+}
 
 
 .about-section__item--full {
@@ -160,16 +188,24 @@
 }
 
 .about-section__item--full-1::before {
-    background-image: url("../../img/icons/notes.svg");
+    background-image: url("../img/icons/notes.svg");
+}
+
+.about-section__item--1::before {
+    background-image: url("../img/icons/notes.svg");
 }
 
 .about-section__item--full-7::before {
-    background-image: url("../../img/icons/learning.svg");
+    background-image: url("../img/icons/learning.svg");
+}
+
+.about-section__item--7::before {
+    background-image: url("../img/icons/learning.svg");
 }
 
 
 .about-section--slider {
-    display: block;
+    display: none;
     @media (max-width: 768px) {
         display: block;
     }
@@ -226,7 +262,7 @@
 .card-reason__item {
     max-width: 30%;
     padding-top: 110px;
-    background-image: url("../../img/icons/laptop.svg");
+    background-image: url("../img/icons/laptop.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 92px 92px;
@@ -235,12 +271,12 @@
 }
 
 .card-reason__item-2 {
-    background-image: url("../../img/icons/businessman\ \(1\).svg");
+    background-image: url("../img/icons/businessman\ \(1\).svg");
     background-size: 110px 110px;
 }
 
 .card-reason__item-3 {
-    background-image: url("../../img/icons/clipboard.svg");
+    background-image: url("../img/icons/clipboard.svg");
 }
 
 .card-reason__title {

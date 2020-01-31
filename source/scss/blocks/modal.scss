@@ -92,7 +92,7 @@
     height: 34px;
     border-radius: 50%;
     background-color: $accent-light;
-    background-image: url("../../img/close-button.png");
+    background-image: url("../img/close-button.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10px 10px;
@@ -111,11 +111,30 @@
     }
 }
 
-// .modal.modal-info {
-//     &::before {
-//         display: none;
-//     }
-// }
+.modal-info__close-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $accent-light;
+    background-image: url("../img/close-button.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    &:hover {
+        background-color: $accent-gray;
+    }
+    @media (max-width: 375px) {
+        top: 5px;
+        right: 5px;
+    }
+}
+
 
 .modal-info .modal__container {
     display: block;

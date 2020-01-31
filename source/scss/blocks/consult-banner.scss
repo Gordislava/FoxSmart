@@ -1,6 +1,6 @@
 .consult-banner {
     background-color: #3c86d3;
-    background-image: url("../../img/bgr-gradient-angle.png");
+    background-image: url("../img/bgr-gradient-angle.png");
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
@@ -11,7 +11,7 @@
     border-radius: 8px;
     background-size: cover;
     @media (max-width: 768px) {
-        background-image: url("../../img/bgr-gradient-angle-vertical.png");
+        background-image: url("../img/bgr-gradient-angle-vertical.png");
         flex-direction: column;
         text-align: center;
         padding: 30px 25px 20px;
@@ -71,10 +71,8 @@
     border: 3px solid #009ae5;
     background-repeat: no-repeat;
     background-position: left -4px center;
-    // background-image: url("../../img/time-banner-full.png");
     background-size: cover;
     overflow: hidden;
-    // padding: 5px 20px 25px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,22 +83,6 @@
         align-items: stretch;
     }
     
-    // @media (max-width: 1200px) {
-    //     background-image: linear-gradient(114deg, rgba(0,154,229,1) 0%, rgba(0,154,229,1) 38%, rgba(255,255,255,1) 38%, rgba(255,255,255,0) 100%);
-    // }
-    // @media (max-width: 1024px) {
-    //     padding-top: 30px;
-    //     padding-bottom: 30px;
-    //     padding-left: 9px;
-    // }
-    // @media (max-width: 768px) {
-    //     background-image: linear-gradient(189deg, rgba(0,154,229,1) 0%, rgba(0,154,229,1) 30%, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%);
-    //     flex-direction: column;
-    //     text-align: center;
-    //     padding-top: 15px;
-    //     min-height: 530px;
-    //     background-size: cover;
-    // }
     @media (max-width: 768px) {
         flex-direction: column;
         text-align: center;
@@ -170,7 +152,7 @@
         content: "";
         width: 50px;
         height: 50px;
-        background-image: url("../../img/icons/alarm-clock.svg");
+        background-image: url("../img/icons/alarm-clock.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -313,7 +295,7 @@
     margin-bottom: 50px;
     display: flex;
     overflow: hidden;
-    background-image: url("../../img/circles.png");
+    background-image: url("../img/circles.png");
     background-repeat: no-repeat;
     background-position: right center;
     border-radius: 8px;

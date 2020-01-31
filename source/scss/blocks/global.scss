@@ -180,7 +180,7 @@ ul:not([class]) li {
     position: relative;
     padding-left: 24px;
     &::before {
-        content: url('../../img/checked.png');
+        content: url('../img/checked.png');
         width: 21px;
         height: 21px;
         position: absolute;

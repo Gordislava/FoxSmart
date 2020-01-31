@@ -76,7 +76,7 @@
 }
 
 .card__item-pc {
-    background-image: url("../../img/icons/video-call.svg");
+    background-image: url("../img/icons/video-call.svg");
     background-size: 80px 80px;
     @media (max-width: 600px) {
         border-top-right-radius: 8px;
@@ -85,22 +85,22 @@
 }
 
 .card__item-1c {
-    background-image: url("../../img/1c.png");
+    background-image: url("../img/1c.png");
     background-size: 75px 92px;
 }
 
 .card__item-scratch {
-    background-image: url("../../img/icons/browser.svg");
+    background-image: url("../img/icons/browser.svg");
     background-size: 80px 80px;
 }
 
 .card__item-autocad {
-    background-image: url("../../img/icons/cube.svg");
+    background-image: url("../img/icons/cube.svg");
     background-size: 70px 80px;
 }
 
 .card__item-photoshop {
-    background-image: url("../../img/icons/pantone.svg");
+    background-image: url("../img/icons/pantone.svg");
     background-size: 86px 84px;
 }
 
@@ -154,7 +154,7 @@
         content: "";
         width: 170px;
         height: 173px;
-        background-image: url("../../img/icons/chat.svg");
+        background-image: url("../img/icons/chat.svg");
         background-position: center;
         background-repeat: no-repeat;
         right: 0;
@@ -195,27 +195,27 @@
 }
 
 .card__item--small.card__item-languages {
-    background-image: url("../../img/icons/languages.svg");
+    background-image: url("../img/icons/languages.svg");
     background-size: 55px 55px;
 }
 
 .card__item--small.card__item-scratch {
-    background-image: url("../../img/icons/editing.svg");
+    background-image: url("../img/icons/editing.svg");
     background-size: 55px 55px;
 }
 
 .card__item--small.card__item-robot {
-    background-image: url("../../img/icons/robot.svg");
+    background-image: url("../img/icons/robot.svg");
     background-size: 55px 55px;
 }
 
 .card__item--small.card__item-chess {
-    background-image: url("../../img/icons/chess-pieces.svg");
+    background-image: url("../img/icons/chess-pieces.svg");
     background-size: 55px 55px;
 }
 
 .card__item--small.card__item-calligraphy {
-    background-image: url("../../img/icons/edit.svg");
+    background-image: url("../img/icons/edit.svg");
     background-size: 51px 55px;
 }
 
@@ -228,17 +228,17 @@
 }
 
 .card__item--small.card__item-calligraphy {
-    background-image: url("../../img/icons/edit.svg");
+    background-image: url("../img/icons/edit.svg");
     background-size: 51px 55px;
 }
 
 .card__item--small.card__item-photoshop {
-    background-image: url("../../img/icons/paint.svg");
+    background-image: url("../img/icons/paint.svg");
     background-size: 51px 55px;
 }
 
 .card__item--small.card__item-pc {
-    background-image: url("../../img/icons/gaming.svg");
+    background-image: url("../img/icons/gaming.svg");
     background-size: 55px 47px;
 }
 
@@ -307,7 +307,7 @@
 }
 
 .card-advantage__item--calendar {
-    background-image: url("../../img/icons/calendar.svg");
+    background-image: url("../img/icons/calendar.svg");
     background-position: left top 10px;
     @media (max-width: 768px) {
         background-position: center top;
@@ -315,39 +315,39 @@
 }
 
 .card-advantage__item--loupe {
-    background-image: url("../../img/icons/loupe.svg");
+    background-image: url("../img/icons/loupe.svg");
 }
 
 .card-advantage__item--folder {
-    background-image: url("../../img/icons/folder.svg");
+    background-image: url("../img/icons/folder.svg");
 
 }
 
 .card-advantage__item--desk {
-    background-image: url("../../img/icons/desk.svg");
+    background-image: url("../img/icons/desk.svg");
 }
 
 .card-advantage__item--ct {
-    background-image: url("../../img/icons/book.svg");
+    background-image: url("../img/icons/book.svg");
 }
 
 .card-advantage__item--loupe-ct {
-    background-image: url("../../img/icons/search.svg");
+    background-image: url("../img/icons/search.svg");
 }
 
 .card-advantage__item--algorithm-ct {
-    background-image: url("../../img/icons/e-learning.svg");
+    background-image: url("../img/icons/e-learning.svg");
 }
 
 .card-advantage__item--trainings {
-    background-image: url("../../img/icons/book\ \(1\).svg");
+    background-image: url("../img/icons/book\ \(1\).svg");
 }
 
 
 
 .card-small {
     background-color: $accent-light;
-    background-image: url("../../img/pattern-light.png");
+    background-image: url("../img/pattern-light.png");
     background-repeat: no-repeat;
     background-position: left center;
     padding-bottom: 15px;
@@ -388,6 +388,7 @@
     }
     @media (max-width: 600px) {
         width: 100%;
+        text-align: center;
     }
     &::before {
         position: absolute;
@@ -407,16 +408,16 @@
 }
 
 .card-small__item--group::before {
-    background-image: url("../../img/icons/teamwork.svg");
+    background-image: url("../img/icons/teamwork.svg");
 }
 .card-small__item--strategy::before {
-    background-image: url("../../img/icons/strategy.svg");
+    background-image: url("../img/icons/strategy.svg");
 }
 .card-small__item--chat::before {
-    background-image: url("../../img/icons/conversation.svg");
+    background-image: url("../img/icons/conversation.svg");
 }
 .card-small__item--employee::before {
-    background-image: url("../../img/icons/employee.svg");
+    background-image: url("../img/icons/employee.svg");
 }
 
 
@@ -489,7 +490,7 @@
         height: 37px;
         background-color: #ea550b;
         border-radius: 50%;
-        background-image: url("../../img/check.png");
+        background-image: url("../img/check.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -521,7 +522,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url("../../img/pattern-light-small.png");
+        background-image: url("../img/pattern-light-small.png");
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 80px;
@@ -559,7 +560,7 @@
         top: -35px;
         left: 50%;
         margin-left: -37px;
-        background-image: url("../../img/icons/businessman\ \(1\).svg");
+        background-image: url("../img/icons/businessman\ \(1\).svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -599,7 +600,7 @@
         }
     }
     &::before {
-        background-image: url("../../img/icons/laptop.svg");
+        background-image: url("../img/icons/laptop.svg");
         width: 92px;
         height: 92px;
         margin-left: -46px;
@@ -656,7 +657,7 @@
         margin-left: 0;
     }
     &::before {
-        background-image: url("../../img/icons/clipboard.svg");
+        background-image: url("../img/icons/clipboard.svg");
         width: 60px;
         height: 60px;
         margin-left: -25px;

@@ -80,7 +80,7 @@
     width: 30px;
     height: 30px;
     display: inline-block;
-    background-image: url("../../img/icons/instagram.svg");
+    background-image: url("../img/icons/instagram.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -101,7 +101,7 @@
     .block-phone-wrap {
         max-width: 290px;
         padding-left: 50px;
-        background-image: url("../../img/phone-orange.png");
+        background-image: url("../img/phone-orange.png");
         background-repeat: no-repeat;
         background-position: left center;
         background-size: 33px 33px;
@@ -141,11 +141,11 @@
 
         }
         .block-phone__icon--viber {
-            background-image: url("../../img/icons/viber.svg");
+            background-image: url("../img/icons/viber.svg");
             margin-right: 10px;
         }
         .block-phone__icon--whatsapp {
-            background-image: url("../../img/icons/whatsapp.svg");
+            background-image: url("../img/icons/whatsapp.svg");
         }
     }
 }
