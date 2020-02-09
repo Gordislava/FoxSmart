@@ -7,9 +7,11 @@
         padding-right: 20px;
         margin: auto;
         margin-bottom: 50px;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
         @media (max-width: 420px) {
             padding: 0 15px;
-            margin-bottom: 15px;
             text-align: center;
         }
         @media (max-width: 1280px) {
@@ -24,8 +26,16 @@
     position: relative;
     min-height: 495px;
     @media (max-width: 768px) {
-        padding-top: 50px;
+        padding-top: 0;
         padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tabcontent__wrap {
+    @media (max-width: 768px) {
+        order: 2;
     }
 }
 
@@ -38,10 +48,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 705px;
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 25px;
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: -100px;
     }
 }
 
@@ -92,6 +102,9 @@
         font-size: 17px;
         line-height: 20px;
         margin-bottom: 10px;
+        @media (max-width: 768px) {
+            color: $bg-color;
+        }
     }
     p {
         padding: 0;
@@ -103,6 +116,9 @@
     @media (max-width: 768px) {
         order: 1;
         margin-bottom: auto;
+        background-color: $accent;
+        color: $bg-color;
+        margin-bottom: 1px;
     }
 }
 
@@ -127,10 +143,16 @@
 
 .tab__link--general:hover {
     background-color: darken($color: $bg-color, $amount: 5);
+    @media (max-width: 768px) {
+        background-color: darken($color: $accent, $amount: 5);
+    }
 }
 
 .tab__link--general.active {
     background-color: darken($color: $bg-color, $amount: 0);
+    @media (max-width: 768px) {
+        background-color: darken($color: $accent, $amount: 5);
+    }
 }
 
 
@@ -189,6 +211,9 @@
     }
     .tab {
         overflow: visible;
+        @media (max-width: 768px) {
+            margin-top: 80px;
+        }
     }
     .tab__wrap {
         display: flex;
@@ -196,14 +221,15 @@
         justify-content: center;
         position: absolute;
         margin-top: -60px;
-        left: 50%;
-        margin-left: -640px;
+        left: 0;
+        right: 0;
         z-index: 999;
         width: 100%;
         @media (max-width: 768px) {
             left: 0;
             margin-left: 0;
             flex-direction: column;
+            position: relative;
         }
     }
     .tab__link {
@@ -311,6 +337,7 @@
         @media (max-width: 768px) {
             order: 2;
             margin-bottom: 20px;
+            margin-top: 10px;
         }
     }
 
@@ -321,17 +348,17 @@
             p {
                 color: $bg-color;
             }
-            .block-phone-social {
-                display: none;
+            .block-phone__link {
+                color: $bg-color;
             }
-            .tab__social {
-                display: none;
-            }
+            // .tab__social {
+            //     display: none;
+            // }
             &:hover {
                 background-color: darken($color: $accent, $amount: 5);
             }
             &.active {
-                ackground-color: darken($color: $accent, $amount: 5);
+                background-color: darken($color: $accent, $amount: 5);
             }
         }
     }

@@ -126,7 +126,7 @@ window.addEventListener("DOMContentLoaded", function() {
             if (this.value.length == 2) this.value = ""
         } else setCursorPosition(this.value.length, this)
     };
-        var input = document.querySelector("#tel");
+        var input = document.querySelector(".tel");
         input.addEventListener("input", mask, false);
         input.addEventListener("focus", mask, false);
         input.addEventListener("blur", mask, false);

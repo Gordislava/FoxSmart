@@ -31,8 +31,6 @@
     padding: 35px 40px 30px 30px;
     box-shadow: 0px 5px 38px 0 rgba(10, 20, 26, 0.07);
     border: solid 1px #ecf0f2;
-    background-repeat: no-repeat;
-    background-position: left 30px top 35px;
     width: 33.33%;
     display: flex;
     @media (max-width: 1024px) {
@@ -61,47 +59,56 @@
 }
 
 .card__wrap {
-    padding-left: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     @media (max-width: 600px) {
-        padding-left: 0;
-        padding-top: 110px;
         margin: auto;
+        flex-direction: column;
+        align-items: center;
     }
     br {
         display: none;
     }
+    img  {
+        margin-right: 15px;
+        @media (max-width: 600px) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+    }
 }
 
+.card__item-pc img {
+    width: 90px;
+    height: 90px;
+}
+
+
 .card__item-pc {
-    background-image: url("../img/icons/video-call.svg");
-    background-size: 80px 80px;
     @media (max-width: 600px) {
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
     }
 }
 
-.card__item-1c {
-    background-image: url("../img/1c.png");
-    background-size: 75px 92px;
+.card__item-1c img {
+    width: 75px;
+    height: 92px;
 }
 
-.card__item-scratch {
-    background-image: url("../img/icons/browser.svg");
-    background-size: 80px 80px;
+.card__item-scratch img {
+    width: 80px;
+    height: 80px;
 }
 
-.card__item-autocad {
-    background-image: url("../img/icons/cube.svg");
-    background-size: 70px 80px;
+.card__item-autocad img {
+    width: 70px;
+    height: 80px;
 }
 
-.card__item-photoshop {
-    background-image: url("../img/icons/pantone.svg");
-    background-size: 86px 84px;
+.card__item-photoshop img {
+    width: 86px;
+    height: 84px;
 }
 
 
@@ -170,11 +177,10 @@
 }
 
 .card__item--small {
-    padding: 25px 25px;
+    padding: 25px 35px 25px 25px;
     min-height: 135px;
     @media (max-width: 600px) {
         text-align: left;
-        background-position: left 25px top 20px;
         min-height: 100px;
     }
     h4 {
@@ -188,58 +194,41 @@
         justify-content: space-evenly;
         @media (max-width: 600px) {
             padding-top: 0;
-            padding-left: 80px;
             margin: 0;
+            flex-direction: row;
         }
+    }
+    img {
+        margin-right: 20px;
+        width: 55px;
+        height: 55px;
     }
 }
 
-.card__item--small.card__item-languages {
-    background-image: url("../img/icons/languages.svg");
-    background-size: 55px 55px;
+.card__item--small.card__item-calligraphy img {
+    width: 50px;
+    height: 55px;
 }
 
-.card__item--small.card__item-scratch {
-    background-image: url("../img/icons/editing.svg");
-    background-size: 55px 55px;
+.card__item--small.card__item-1c img {
+    width: 54px;
+    height: 66px;
 }
 
-.card__item--small.card__item-robot {
-    background-image: url("../img/icons/robot.svg");
-    background-size: 55px 55px;
+.card__item--small.card__item-autocad img {
+    width: 50px;
+    height: 55px;
 }
 
-.card__item--small.card__item-chess {
-    background-image: url("../img/icons/chess-pieces.svg");
-    background-size: 55px 55px;
+
+.card__item--small.card__item-photoshop img {
+    width: 51px;
+    height: 55px;
 }
 
-.card__item--small.card__item-calligraphy {
-    background-image: url("../img/icons/edit.svg");
-    background-size: 51px 55px;
-}
-
-.card__item--small.card__item-1c {
-    background-size: 54px 66px;
-}
-
-.card__item--small.card__item-autocad {
-    background-size: 50px 55px;
-}
-
-.card__item--small.card__item-calligraphy {
-    background-image: url("../img/icons/edit.svg");
-    background-size: 51px 55px;
-}
-
-.card__item--small.card__item-photoshop {
-    background-image: url("../img/icons/paint.svg");
-    background-size: 51px 55px;
-}
-
-.card__item--small.card__item-pc {
-    background-image: url("../img/icons/gaming.svg");
-    background-size: 55px 47px;
+.card__item--small.card__item-pc img {
+    width: 55px;
+    height: 47px;
 }
 
 
