@@ -208,10 +208,17 @@
                             <p class="page-title-note">Мы с радостью ответим на все интересующие Вас вопросы</p>
                             <div class="form__wrapper">
                                 <div class="form__input-wrapper form__input--size-full">
-                                    <input type="text" name="" id="" class="form__input" placeholder="Ваше имя">
-                                    <input type="tel" name="" id="tel" class="form__input tel" placeholder="Ваш телефон">
+                                    <div class="form__warning-wrap">
+                                        <span class="form__warning">Поле заполнено не верно!</span>
+                                        <input type="text" name="" id="" class="form__input" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form__warning-wrap">
+                                        <span class="form__warning">Поле заполнено не верно!</span>
+                                        <input type="tel" name="" id="tel" class="form__input tel" placeholder="Ваш телефон">
+                                    </div>
                                 </div>
-                                <div class="select__wrap">
+                                <div class="select__wrap form__warning-wrap">
+                                    <span class="form__warning">Поле заполнено не верно!</span>
                                     <select name="" id="" class="form__input form__input--select form__input--size-full" style="color: #b8babb;">
                                         <option selected disabled class="placeholder">Ваш город</option>
                                         <option value="Минск" style="padding-top: 18px; padding-bottom: 18px;">Минск</option>
@@ -220,7 +227,11 @@
                                         <option value="Жлобин">Жлобин</option>
                                     </select>
                                 </div>
-                                <textarea name="" id="" class="form__input form__input--size-full form__input--textarea" placeholder="Сообщение"></textarea>
+                                <div class="form__warning-wrap form__warning-wrap--full">
+                                    <span class="form__warning">Поле заполнено не верно!</span>
+                                    <textarea name="" id="" class="form__input form__input--size-full form__input--textarea " placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="form__recaptcha"></div>
                                 <div class="form__btn-wrap">
                                     <button class="btn btn-orange js-form-button" type="submit">Отправить</button>
                                     <p class="form-small__note">Нажимая на кнопку «Оставить заявку», вы соглашаетесь с 

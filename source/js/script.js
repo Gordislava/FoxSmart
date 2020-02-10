@@ -37,13 +37,6 @@ var modalPurchase = document.querySelector(".modal__container");
 var modalOverlay = document.querySelector(".modal-form");
 var close = document.querySelector(".modal__close-button")
 
-// if (oldOrderButton) {
-// orderButton.addEventListener("click", function(evt) {
-// evt.preventDefault();
-// modalOverlay.classList.remove("visually-hidden");
-// });
-// }
-
 orderButton.forEach(e =>
 e.addEventListener("click", function(evt) {
 evt.preventDefault();

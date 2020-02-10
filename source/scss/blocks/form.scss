@@ -64,14 +64,7 @@
         padding: 10px 0 10px;
         justify-content: center;
     }
-    .form-small__input {
-        background-color: $bg-color;
-        border-radius: 27px;
-        box-shadow: 0px 6px 24px 0 rgba(23, 69, 92, 0.07);
-        border: solid 1px #2b73be;
-        padding: 18px 30px;
-        font-family: $lato;
-        font-size: 14px;
+    .form__warning-wrap--small {
         margin-right: 25px;
         flex-grow: 1;
         max-width: 280px;
@@ -82,6 +75,18 @@
             margin-bottom: 20px;
             margin-right: 0;
         }
+    }
+    .form-small__input {
+        background-color: $bg-color;
+        border-radius: 27px;
+        box-shadow: 0px 6px 24px 0 rgba(23, 69, 92, 0.07);
+        border: solid 1px #2b73be;
+        padding: 18px 30px;
+        font-family: $lato;
+        font-size: 14px;
+        width: 100%;
+        
+        
     }
     .form-small__input::placeholder {
         text-transform: uppercase;
@@ -251,9 +256,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .form__input {
+    .form__warning-wrap {
         width: 48%;
         @media (max-width: 600px) {
+            width: 100%;
+        }
+        .form__input {
             width: 100%;
         }
     }
@@ -415,12 +423,47 @@ textarea {
     border-color: #1876ce;
 }
 
-.form__input.error {
+.form__warning {
+    display: block;
+    font-size: 10px;
+    color: $red;
+    margin-bottom: 5px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+
+.form__warning-wrap.success .form__input {
+    border-color: green;
+    box-shadow: 0px 6px 54px 0 rgba(green, 0.1);
+}
+
+.form__warning-wrap {
+    position: relative;
+}
+
+.form__warning-wrap--full {
+    width: 100%;
+}
+
+.form__warning-wrap.error .form__warning {
+    display: block;
+}
+
+.form__warning-wrap.error .form__input {
     border-color: #f2305b;
     box-shadow: 0px 6px 54px 0 rgba(241, 16, 74, 0.1);
 }
 
-.form__input.success {
-    border-color: green;
-    box-shadow: 0px 6px 54px 0 rgba(green, 0.1);
+.form__recaptcha {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:425px) {
+        width: 90%;
+    }
 }

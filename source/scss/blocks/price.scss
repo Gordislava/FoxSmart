@@ -1,6 +1,17 @@
 .price {
     margin-top: 50px;
     margin-bottom: 50px;
+    @media (max-width: 600px) {
+        margin-top: 0;
+    }
+    .page-title {
+        display: none;
+        @media (max-width: 600px) {
+            display: block;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    }
 }
 
 

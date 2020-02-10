@@ -269,12 +269,16 @@
                             Мы свяжемся с Вами по указанным контактам!</p>
                         <form action="" class="form-small">
                             <div class="form-small__wrapper">
-                                <input type="text" placeholder="Ваше имя" class="form-small__input">
-                                <input type="tel" placeholder="Ваш телефон" class="form-small__input" id="tel">
+                                <div class="form__warning-wrap form__warning-wrap--small">
+                                    <span class="form__warning">Поле заполнено не верно!</span>
+                                    <input type="text" placeholder="Ваше имя" class="form-small__input">
+                                </div>
+                                <div class="form__warning-wrap form__warning-wrap--small">
+                                    <input type="tel" placeholder="Ваш телефон" class="form-small__input" id="tel">
+                                </div>
                                 <button class="btn btn-orange js-form-button">Оставить заявку</button>
                                 <p class="form-small__note">Нажимая на кнопку «Оставить заявку», вы соглашаетесь с 
                                     Политикой конфиденциальности</p>
-    
                             </div>
                         </form>
                     </div>
@@ -283,44 +287,30 @@
                     <div class="container">
                         <div class="slider__wrap">
                             <h2 class="page-title">Почему FoxSmart?</h2>
-                            <div class="glide">
-                                <div class="glide__track" data-glide-el="track">
-                                    <ul class="glide__slides card-reason__list">
-                                        <li class="glide__slide card-reason__item card-reason__item-1">
-                                            <h3 class="card-reason__title">Высокий профессионализм</h3>
-                                            <ul>
-                                                <li>Проверенные методики обучения</li>
-                                                <li>Профессиональные педагоги</li>
-                                            </ul>
-                                        </li>
-                                        <li class="glide__slide card-reason__item card-reason__item-2">
-                                            <h3 class="card-reason__title">Высокий профессионализм</h3>
-                                            <ul>
-                                                <li>Проверенные методики обучения</li>
-                                                <li>Профессиональные педагоги</li>
-                                                <li>Компактная подача материала</li>
-                                            </ul>
-                                        </li>
-                                        <li class="glide__slide card-reason__item card-reason__item-3">
-                                            <h3 class="card-reason__title">Высокий профессионализм</h3>
-                                            <ul>
-                                                <li>Проверенные методики обучения</li>
-                                                <li>Профессиональные педагоги</li>
-                                            </ul>
-                                        </li>
+                            <ul class="card-reason__list">
+                                <li class="card-reason__item card-reason__item-1">
+                                    <h3 class="card-reason__title">Высокий профессионализм</h3>
+                                    <ul>
+                                        <li>Проверенные методики обучения</li>
+                                        <li>Профессиональные педагоги</li>
                                     </ul>
-                                </div>
-                                <div class="glide__arrows" data-glide-el="controls">
-                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                                </div>
-                                <div class="glide__bullets" data-glide-el="controls[nav]">
-                                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                                </div>
-    
-                            </div>
+                                </li>
+                                <li class="card-reason__item card-reason__item-2">
+                                    <h3 class="card-reason__title">Высокий профессионализм</h3>
+                                    <ul>
+                                        <li>Проверенные методики обучения</li>
+                                        <li>Профессиональные педагоги</li>
+                                        <li>Компактная подача материала</li>
+                                    </ul>
+                                </li>
+                                <li class="card-reason__item card-reason__item-3">
+                                    <h3 class="card-reason__title">Высокий профессионализм</h3>
+                                    <ul>
+                                        <li>Проверенные методики обучения</li>
+                                        <li>Профессиональные педагоги</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -385,21 +375,33 @@
                                 <form action="" class="form">
                                     <div class="form__wrapper">
     
-                                            <input type="text" name="" id="" class="form__input form__input--size-full" placeholder="Ваше имя">
-                                            <input type="tel" name="" id="tel" class="form__input form__input--size-full tel" placeholder="Ваш телефон">
+                                            <div class="form__warning-wrap form__warning-wrap--full">
+                                                <span class="form__warning">Поле заполнено не верно!</span>
+                                                <input type="text" name="" id="" class="form__input form__input--size-full" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="form__warning-wrap form__warning-wrap--full">
+                                                <span class="form__warning">Поле заполнено не верно!</span>
+                                                <input type="tel" name="" id="tel" class="form__input form__input--size-full tel" placeholder="Ваш телефон">
+                                            </div>
     
                                         <div class="select__wrap">
-                                            <select name="" id="" class="form__input form__input--select form__input--size-full" style="color: #b8babb;">
-                                                <option selected disabled class="placeholder">Ваш город</option>
-                                                <option value="Минск" style="padding-top: 18px; padding-bottom: 18px;">Минск</option>
-                                                <option value="Борисов">Борисов</option>
-                                                <option value="Бобруйск">Бобруйск</option>
-                                                <option value="Жлобин">Жлобин</option>
-                                            </select>
+                                            <div class="form__warning-wrap form__warning-wrap--full">
+                                                <span class="form__warning">Поле заполнено не верно!</span>
+                                                <select name="" id="" class="form__input form__input--select form__input--size-full" style="color: #b8babb;">
+                                                    <option selected disabled class="placeholder">Ваш город</option>
+                                                    <option value="Минск" style="padding-top: 18px; padding-bottom: 18px;">Минск</option>
+                                                    <option value="Борисов">Борисов</option>
+                                                    <option value="Бобруйск">Бобруйск</option>
+                                                    <option value="Жлобин">Жлобин</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <textarea name="" id="" class="form__input form__input--size-full form__input--textarea" placeholder="Сообщение"></textarea>
-                                        <div class="form__btn-wrap">
-                                            <button class="btn btn-orange js-form-button" type="submit">Отправить</button>
+                                        <div class="form__warning-wrap form__warning-wrap--full">
+                                            <span class="form__warning">Поле заполнено не верно!</span>
+                                            <textarea name="" id="" class="form__input form__input--size-full form__input--textarea " placeholder="Сообщение"></textarea>
+                                        </div>
+                                        <div class="form__recaptcha"></div>
+                                        <button class="btn btn-orange js-form-button" type="submit">Отправить</button>
                                         </div>
                                     </div>
                                 </form>
@@ -516,10 +518,17 @@
                         <form action="" class="form">
                             <div class="form__wrapper">
                                 <div class="form__input-wrapper form__input--size-full">
-                                    <input type="text" name="" id="" class="form__input" placeholder="Ваше имя">
-                                    <input type="tel" name="" class="form__input tel" placeholder="Ваш телефон">
+                                    <div class="form__warning-wrap">
+                                        <span class="form__warning">Поле заполнено не верно!</span>
+                                        <input type="text" name="" id="" class="form__input" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="form__warning-wrap">
+                                        <span class="form__warning">Поле заполнено не верно!</span>
+                                        <input type="tel" name="" id="tel" class="form__input tel" placeholder="Ваш телефон">
+                                    </div>
                                 </div>
-                                <div class="select__wrap">
+                                <div class="select__wrap form__warning-wrap">
+                                    <span class="form__warning">Поле заполнено не верно!</span>
                                     <select name="" id="" class="form__input form__input--select form__input--size-full" style="color: #b8babb;">
                                         <option selected disabled class="placeholder">Ваш город</option>
                                         <option value="Минск" style="padding-top: 18px; padding-bottom: 18px;">Минск</option>
@@ -528,7 +537,11 @@
                                         <option value="Жлобин">Жлобин</option>
                                     </select>
                                 </div>
-                                <textarea name="" id="" class="form__input form__input--size-full form__input--textarea" placeholder="Сообщение"></textarea>
+                                <div class="form__warning-wrap form__warning-wrap--full">
+                                    <span class="form__warning">Поле заполнено не верно!</span>
+                                    <textarea name="" id="" class="form__input form__input--size-full form__input--textarea " placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="form__recaptcha"></div>
                                 <div class="form__btn-wrap">
                                     <button class="btn btn-orange" type="submit">Отправить</button>
                                     <p class="form-small__note form-small__note-modal">Нажимая на кнопку «Оставить заявку», вы соглашаетесь с 
@@ -552,30 +565,6 @@
         </div>
     </div>
     <script src="js/glide.min.js"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            startAt: 0,
-            swipeThreshold: false,
-            dragThreshold: false,       
-            breakpoints: {
-            2560: {
-            perView: 3,
-            autoplay: false
-            },
-            1024: {
-            perView: 2,
-            autoplay: 4000,
-            swipeThreshold: true,
-            dragThreshold: true
-            },
-            600: {
-            perView: 1
-            }
-        }
-
-        }).mount()
-    </script>
     <script>
         window.addEventListener("DOMContentLoaded", function() {
         function setCursorPosition(pos, elem) {
